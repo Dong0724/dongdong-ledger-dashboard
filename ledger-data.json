@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T06:17:49.134Z",
+  "generatedAt": "2026-06-16T06:25:34.685Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -283,6 +283,17 @@
           "rowNumber": 17,
           "month": "2026-06",
           "timestamp": "2026-06-16T06:12:06.868Z",
+          "date": "2026-06-16",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "壽司",
+          "amount": 500,
+          "currency": "Yen"
+        },
+        {
+          "rowNumber": 18,
+          "month": "2026-06",
+          "timestamp": "2026-06-16T06:25:29.930Z",
           "date": "2026-06-16",
           "type": "expense",
           "category": "餐飲",
