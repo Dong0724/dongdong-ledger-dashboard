@@ -33,7 +33,7 @@ const formatter = new Intl.NumberFormat("zh-TW", {
 init();
 
 async function init() {
-  const response = await fetch("./ledger-data.json", { cache: "no-store" });
+  const response = await fetch(`./ledger-data.json?updated=${Date.now()}`, { cache: "reload" });
   if (!response.ok) {
     showLoadError();
     return;
