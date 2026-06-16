@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T06:55:18.871Z",
+  "generatedAt": "2026-06-16T06:58:34.804Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,26 +43,26 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 14471,
+      "totalExpense": 14411,
       "totalIncome": 0,
-      "net": -14471,
+      "net": -14411,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 1406,
-          "ratio": 0.09715983691520973,
+          "amount": 1426,
+          "ratio": 0.0989521892998404,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 1200,
-          "ratio": 0.08292446962891299,
+          "ratio": 0.08326972451599472,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.6564853845622279,
+          "ratio": 0.6592186524182916,
           "color": "#FFD93D"
         },
         {
@@ -74,13 +74,13 @@
         {
           "category": "醫療",
           "amount": 1800,
-          "ratio": 0.1243867044433695,
+          "ratio": 0.12490458677399209,
           "color": "#6BCB77"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.01969456153686684,
+          "ratio": 0.019776559572548747,
           "color": "#5C7CFA"
         },
         {
@@ -97,8 +97,8 @@
         },
         {
           "category": "其他",
-          "amount": 280,
-          "ratio": 0.019349042913413033,
+          "amount": 200,
+          "ratio": 0.013878287419332454,
           "color": "#ADB5BD"
         }
       ],
@@ -112,7 +112,7 @@
         "2026-06-12": 1655,
         "2026-06-13": 265,
         "2026-06-15": 74,
-        "2026-06-16": 80
+        "2026-06-16": 20
       },
       "entries": [
         {
@@ -319,9 +319,9 @@
           "timestamp": "2026-06-16T06:55:13.592Z",
           "date": "2026-06-16",
           "type": "expense",
-          "category": "其他",
-          "item": "四人份地瓜球",
-          "amount": 80,
+          "category": "餐飲",
+          "item": "地瓜球",
+          "amount": 20,
           "currency": "TWD"
         }
       ]
