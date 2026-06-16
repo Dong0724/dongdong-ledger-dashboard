@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T02:15:09.854Z",
+  "generatedAt": "2026-06-16T02:17:50.097Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -231,7 +231,7 @@
           "date": "2026-06-12",
           "type": "expense",
           "category": "醫療",
-          "item": "上周五 保健食品",
+          "item": "保健食品",
           "amount": 1600
         },
         {
