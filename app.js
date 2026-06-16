@@ -125,11 +125,14 @@ function renderChart(month) {
   elements.categoryLegend.replaceChildren(
     ...month.categories.map((category) => {
       const row = document.createElement("div");
-      row.className = "legend-row";
+      row.className = `legend-row${category.amount > 0 ? "" : " is-zero"}`;
       row.innerHTML = `
         <span class="swatch" style="background:${escapeAttr(category.color)}"></span>
-        <span>${escapeHtml(category.category)}</span>
-        <strong>${money(category.amount)}・${percent(category.ratio)}</strong>
+        <span class="legend-name">${escapeHtml(category.category)}</span>
+        <span class="legend-metric">
+          <strong class="legend-amount">${money(category.amount)}</strong>
+          <span class="legend-percent">${percent(category.ratio)}</span>
+        </span>
       `;
       return row;
     })
