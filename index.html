@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DongDong Ledger Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">DongDong Ledger</p>
+          <h1>消費儀錶板</h1>
+        </div>
+        <div class="month-controls" aria-label="月份切換">
+          <button id="prevMonth" class="icon-button" type="button" aria-label="上一個月">‹</button>
+          <select id="monthSelect" aria-label="月份"></select>
+          <button id="nextMonth" class="icon-button" type="button" aria-label="下一個月">›</button>
+        </div>
+      </header>
+
+      <section class="summary-strip" aria-label="月份摘要">
+        <div>
+          <span>本月支出</span>
+          <strong id="totalExpense">$0</strong>
+        </div>
+        <div>
+          <span>本月收入</span>
+          <strong id="totalIncome">$0</strong>
+        </div>
+        <div>
+          <span>收支差額</span>
+          <strong id="netTotal">$0</strong>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <section class="panel chart-panel" aria-label="分類占比">
+          <div id="pieChart" class="pie-chart" role="img" aria-label="分類圓餅圖"></div>
+          <div id="categoryLegend" class="legend"></div>
+        </section>
+
+        <section class="panel calendar-panel" aria-label="日曆">
+          <div class="calendar-head">
+            <strong id="calendarTitle"></strong>
+            <span id="selectedDayTotal"></span>
+          </div>
+          <div class="weekday-grid" aria-hidden="true">
+            <span>日</span>
+            <span>一</span>
+            <span>二</span>
+            <span>三</span>
+            <span>四</span>
+            <span>五</span>
+            <span>六</span>
+          </div>
+          <div id="calendarGrid" class="calendar-grid"></div>
+        </section>
+      </section>
+
+      <section class="detail-grid">
+        <section class="panel table-panel" aria-label="月份明細">
+          <div class="section-title">
+            <h2>當月明細</h2>
+            <span id="entryCount"></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>種類</th>
+                  <th>品項</th>
+                  <th class="amount-cell">金額</th>
+                </tr>
+              </thead>
+              <tbody id="entryTable"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel day-panel" aria-label="日期明細">
+          <div class="section-title">
+            <h2 id="dayTitle">日期明細</h2>
+            <span id="dayCount"></span>
+          </div>
+          <div id="dayEntries" class="day-list"></div>
+        </section>
+      </section>
+
+      <footer class="footer">
+        <span id="generatedAt"></span>
+      </footer>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+{
+  "generatedAt": "2026-06-16T01:15:21.869Z",
+  "timezone": "Asia/Taipei",
+  "categories": [
+    {
+      "name": "餐飲",
+      "color": "#FF6B6B"
+    },
+    {
+      "name": "交通",
+      "color": "#4D96FF"
+    },
+    {
+      "name": "居家",
+      "color": "#FFD93D"
+    },
+    {
+      "name": "娛樂",
+      "color": "#C77DFF"
+    },
+    {
+      "name": "醫療",
+      "color": "#6BCB77"
+    },
+    {
+      "name": "訂閱服務",
+      "color": "#5C7CFA"
+    },
+    {
+      "name": "學習",
+      "color": "#FFB703"
+    },
+    {
+      "name": "旅遊",
+      "color": "#00C2A8"
+    },
+    {
+      "name": "其他",
+      "color": "#ADB5BD"
+    }
+  ],
+  "months": [
+    {
+      "month": "2026-06",
+      "totalExpense": 11252,
+      "totalIncome": 0,
+      "net": -11252,
+      "categories": [
+        {
+          "category": "餐飲",
+          "amount": 1267,
+          "ratio": 0.11260220405261287,
+          "color": "#FF6B6B"
+        },
+        {
+          "category": "交通",
+          "amount": 0,
+          "ratio": 0,
+          "color": "#4D96FF"
+        },
+        {
+          "category": "居家",
+          "amount": 9500,
+          "ratio": 0.8442943476715251,
+          "color": "#FFD93D"
+        },
+        {
+          "category": "娛樂",
+          "amount": 0,
+          "ratio": 0,
+          "color": "#C77DFF"
+        },
+        {
+          "category": "醫療",
+          "amount": 0,
+          "ratio": 0,
+          "color": "#6BCB77"
+        },
+        {
+          "category": "訂閱服務",
+          "amount": 285,
+          "ratio": 0.025328830430145752,
+          "color": "#5C7CFA"
+        },
+        {
+          "category": "學習",
+          "amount": 0,
+          "ratio": 0,
+          "color": "#FFB703"
+        },
+        {
+          "category": "旅遊",
+          "amount": 0,
+          "ratio": 0,
+          "color": "#00C2A8"
+        },
+        {
+          "category": "其他",
+          "amount": 200,
+          "ratio": 0.017774617845716316,
+          "color": "#ADB5BD"
+        }
+      ],
+      "dailyTotals": {
+        "2026-06-05": 580,
+        "2026-06-06": 522,
+        "2026-06-08": 30,
+        "2026-06-09": 50,
+        "2026-06-10": 9985,
+        "2026-06-11": 30,
+        "2026-06-12": 55
+      },
+      "entries": [
+        {
+          "rowNumber": 4,
+          "month": "2026-06",
+          "timestamp": "2026-06-06T09:03:00.052Z",
+          "date": "2026-06-05",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "買蛋糕",
+          "amount": 580
+        },
+        {
+          "rowNumber": 2,
+          "month": "2026-06",
+          "timestamp": "2026-06-06T06:07:51.714Z",
+          "date": "2026-06-06",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "買食材",
+          "amount": 422
+        },
+        {
+          "rowNumber": 3,
+          "month": "2026-06",
+          "timestamp": "2026-06-06T06:34:50.281Z",
+          "date": "2026-06-06",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "早餐",
+          "amount": 100
+        },
+        {
+          "rowNumber": 5,
+          "month": "2026-06",
+          "timestamp": "2026-06-09T06:15:05.178Z",
+          "date": "2026-06-08",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "早餐",
+          "amount": 30
+        },
+        {
+          "rowNumber": 6,
+          "month": "2026-06",
+          "timestamp": "2026-06-09T06:15:47.738Z",
+          "date": "2026-06-09",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "明天聚餐",
+          "amount": 50
+        },
+        {
+          "rowNumber": 7,
+          "month": "2026-06",
+          "timestamp": "2026-06-10T06:33:33.790Z",
+          "date": "2026-06-10",
+          "type": "expense",
+          "category": "居家",
+          "item": "房租",
+          "amount": 9500
+        },
+        {
+          "rowNumber": 8,
+          "month": "2026-06",
+          "timestamp": "2026-06-11T00:22:53.461Z",
+          "date": "2026-06-10",
+          "type": "expense",
+          "category": "訂閱服務",
+          "item": "訂閱Disney plus",
+          "amount": 285
+        },
+        {
+          "rowNumber": 9,
+          "month": "2026-06",
+          "timestamp": "2026-06-11T00:23:26.467Z",
+          "date": "2026-06-10",
+          "type": "expense",
+          "category": "其他",
+          "item": "其他",
+          "amount": 200
+        },
+        {
+          "rowNumber": 10,
+          "month": "2026-06",
+          "timestamp": "2026-06-11T00:23:42.749Z",
+          "date": "2026-06-11",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "早餐",
+          "amount": 30
+        },
+        {
+          "rowNumber": 11,
+          "month": "2026-06",
+          "timestamp": "2026-06-12T09:15:59.309Z",
+          "date": "2026-06-12",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "早餐",
+          "amount": 55
+        }
+      ]
+    }
+  ]
+}
