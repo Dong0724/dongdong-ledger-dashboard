@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T07:26:36.215Z",
+  "generatedAt": "2026-06-16T07:34:14.112Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,26 +43,26 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 14411,
+      "totalExpense": 14561,
       "totalIncome": 0,
-      "net": -14411,
+      "net": -14561,
       "categories": [
         {
           "category": "餐飲",
           "amount": 1426,
-          "ratio": 0.0989521892998404,
+          "ratio": 0.09793283428335967,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 1200,
-          "ratio": 0.08326972451599472,
+          "ratio": 0.08241192225808668,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.6592186524182916,
+          "ratio": 0.6524277178765194,
           "color": "#FFD93D"
         },
         {
@@ -74,13 +74,13 @@
         {
           "category": "醫療",
           "amount": 1800,
-          "ratio": 0.12490458677399209,
+          "ratio": 0.12361788338713,
           "color": "#6BCB77"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.019776559572548747,
+          "ratio": 0.019572831536295583,
           "color": "#5C7CFA"
         },
         {
@@ -97,8 +97,8 @@
         },
         {
           "category": "其他",
-          "amount": 200,
-          "ratio": 0.013878287419332454,
+          "amount": 350,
+          "ratio": 0.02403681065860861,
           "color": "#ADB5BD"
         }
       ],
@@ -112,7 +112,7 @@
         "2026-06-12": 1655,
         "2026-06-13": 265,
         "2026-06-15": 74,
-        "2026-06-16": 20
+        "2026-06-16": 170
       },
       "entries": [
         {
@@ -340,6 +340,18 @@
           "category": "餐飲",
           "item": "地瓜球",
           "amount": 20,
+          "currency": "TWD",
+          "splitParticipants": "我、Danny、Andy、Andy"
+        },
+        {
+          "rowNumber": 21,
+          "month": "2026-06",
+          "timestamp": "2026-06-16T07:34:09.068Z",
+          "date": "2026-06-16",
+          "type": "expense",
+          "category": "其他",
+          "item": "紅酒",
+          "amount": 150,
           "currency": "TWD",
           "splitParticipants": "我、Danny、Andy、Andy"
         }
