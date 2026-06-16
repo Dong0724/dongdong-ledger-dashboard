@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T02:18:13.046Z",
+  "generatedAt": "2026-06-16T02:31:29.399Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,26 +43,26 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 14391,
+      "totalExpense": 14446,
       "totalIncome": 0,
-      "net": -14391,
+      "net": -14446,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 1406,
-          "ratio": 0.09769995135848794,
+          "amount": 1461,
+          "ratio": 0.10113526235636162,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 1200,
-          "ratio": 0.08338544923910778,
+          "ratio": 0.08306797729475288,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.6601348064762699,
+          "ratio": 0.6576214869167936,
           "color": "#FFD93D"
         },
         {
@@ -74,13 +74,13 @@
         {
           "category": "醫療",
           "amount": 1800,
-          "ratio": 0.12507817385866166,
+          "ratio": 0.12460196594212931,
           "color": "#6BCB77"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.019804044194288096,
+          "ratio": 0.019728644607503808,
           "color": "#5C7CFA"
         },
         {
@@ -98,7 +98,7 @@
         {
           "category": "其他",
           "amount": 200,
-          "ratio": 0.01389757487318463,
+          "ratio": 0.013844662882458812,
           "color": "#ADB5BD"
         }
       ],
@@ -111,7 +111,8 @@
         "2026-06-11": 1230,
         "2026-06-12": 1655,
         "2026-06-13": 265,
-        "2026-06-15": 74
+        "2026-06-15": 74,
+        "2026-06-24": 55
       },
       "entries": [
         {
@@ -263,6 +264,16 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 74
+        },
+        {
+          "rowNumber": 17,
+          "month": "2026-06",
+          "timestamp": "2026-06-16T02:31:25.334Z",
+          "date": "2026-06-24",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "咖啡",
+          "amount": 55
         }
       ]
     }
