@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T02:17:50.097Z",
+  "generatedAt": "2026-06-16T02:18:13.046Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -211,7 +211,7 @@
           "date": "2026-06-11",
           "type": "expense",
           "category": "交通",
-          "item": "上周四 交通月票",
+          "item": "交通月票",
           "amount": 1200
         },
         {
