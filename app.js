@@ -160,13 +160,13 @@ function renderCalendar(month) {
 
   for (let day = 1; day <= lastDay; day += 1) {
     const date = `${month.month}-${String(day).padStart(2, "0")}`;
-    const totalLabel = dailyTotalLabel(month, date);
+    const total = month.dailyTotals[date] ?? 0;
     const button = document.createElement("button");
     button.className = `day-button${state.selectedDate === date ? " is-selected" : ""}`;
     button.type = "button";
     button.innerHTML = `
       <span class="day-number">${day}</span>
-      <span class="day-total">${escapeHtml(totalLabel)}</span>
+      <span class="day-total">${total > 0 ? money(total) : ""}</span>
     `;
     button.addEventListener("click", () => {
       state.selectedDate = date;
@@ -176,7 +176,7 @@ function renderCalendar(month) {
   }
 
   elements.calendarTitle.textContent = `${month.month}`;
-  elements.selectedDayTotal.textContent = `${state.selectedDate}・${dailyTotalLabel(month, state.selectedDate) || money(0)}`;
+  elements.selectedDayTotal.textContent = `${state.selectedDate}・${money(month.dailyTotals[state.selectedDate] ?? 0)}`;
   elements.calendarGrid.replaceChildren(...cells);
 }
 
@@ -257,17 +257,6 @@ function formatEntryAmount(entry) {
     return money(entry.amount);
   }
   return `${numberFormatter.format(Number(entry.amount || 0))} ${currency}`;
-}
-
-function dailyTotalLabel(month, date) {
-  const totals = new Map();
-  for (const entry of month.entries.filter((item) => item.date === date && item.type === "expense")) {
-    const currency = entry.currency || "TWD";
-    totals.set(currency, (totals.get(currency) ?? 0) + Number(entry.amount || 0));
-  }
-  return [...totals.entries()]
-    .map(([currency, amount]) => (currency === "TWD" ? money(amount) : `${numberFormatter.format(amount)} ${currency}`))
-    .join(" / ");
 }
 
 function percent(value) {

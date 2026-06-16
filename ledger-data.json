@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T06:12:11.429Z",
+  "generatedAt": "2026-06-16T06:17:27.096Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,26 +43,26 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 14891,
+      "totalExpense": 14391,
       "totalIncome": 0,
-      "net": -14891,
+      "net": -14391,
       "categories": [
         {
           "category": "餐飲",
           "amount": 1406,
-          "ratio": 0.09441944798871801,
+          "ratio": 0.09769995135848794,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 1200,
-          "ratio": 0.08058558861057015,
+          "ratio": 0.08338544923910778,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.6379692431670136,
+          "ratio": 0.6601348064762699,
           "color": "#FFD93D"
         },
         {
@@ -74,13 +74,13 @@
         {
           "category": "醫療",
           "amount": 1800,
-          "ratio": 0.12087838291585522,
+          "ratio": 0.12507817385866166,
           "color": "#6BCB77"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.01913907729501041,
+          "ratio": 0.019804044194288096,
           "color": "#5C7CFA"
         },
         {
@@ -97,8 +97,8 @@
         },
         {
           "category": "其他",
-          "amount": 700,
-          "ratio": 0.047008260022832586,
+          "amount": 200,
+          "ratio": 0.01389757487318463,
           "color": "#ADB5BD"
         }
       ],
@@ -111,8 +111,7 @@
         "2026-06-11": 1230,
         "2026-06-12": 1655,
         "2026-06-13": 265,
-        "2026-06-15": 74,
-        "2026-06-16": 500
+        "2026-06-15": 74
       },
       "entries": [
         {
@@ -286,7 +285,7 @@
           "timestamp": "2026-06-16T06:12:06.868Z",
           "date": "2026-06-16",
           "type": "expense",
-          "category": "其他",
+          "category": "餐飲",
           "item": "壽司",
           "amount": 500,
           "currency": "Yen"
