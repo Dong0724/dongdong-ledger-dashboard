@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T06:25:34.685Z",
+  "generatedAt": "2026-06-16T06:26:13.091Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -300,6 +300,17 @@
           "item": "壽司",
           "amount": 500,
           "currency": "Yen"
+        },
+        {
+          "rowNumber": 19,
+          "month": "2026-06",
+          "timestamp": "2026-06-16T06:26:08.293Z",
+          "date": "2026-06-16",
+          "type": "expense",
+          "category": "旅遊",
+          "item": "飯店",
+          "amount": 1500000,
+          "currency": "RP"
         }
       ]
     },
