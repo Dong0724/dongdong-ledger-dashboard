@@ -320,7 +320,7 @@ select {
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 560px;
+  min-width: 680px;
 }
 
 th,
@@ -377,8 +377,17 @@ td {
 }
 
 .day-entry span {
+  display: block;
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+.day-entry small {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
 }
 
 .empty-state {

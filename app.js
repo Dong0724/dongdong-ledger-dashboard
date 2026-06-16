@@ -190,6 +190,7 @@ function renderEntries(month) {
         <td>${escapeHtml(entry.date)}</td>
         <td>${categoryPill(entry.category)}</td>
         <td>${escapeHtml(entry.item)}</td>
+        <td>${escapeHtml(entry.splitParticipants || "")}</td>
         <td class="amount-cell">${entry.type === "income" ? "+" : ""}${formatEntryAmount(entry)}</td>
       `;
       return row;
@@ -220,6 +221,7 @@ function renderDayEntries(month) {
       item.innerHTML = `
         <strong>${escapeHtml(entry.item)}</strong>
         <span>${escapeHtml(entry.category)}・${entry.type === "income" ? "+" : ""}${formatEntryAmount(entry)}</span>
+        ${entry.splitParticipants ? `<small>拆帳人員：${escapeHtml(entry.splitParticipants)}</small>` : ""}
       `;
       return item;
     })

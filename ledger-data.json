@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T06:58:58.011Z",
+  "generatedAt": "2026-06-16T07:17:50.033Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -124,7 +124,8 @@
           "category": "餐飲",
           "item": "買蛋糕",
           "amount": 580,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 2,
@@ -135,7 +136,8 @@
           "category": "餐飲",
           "item": "買食材",
           "amount": 422,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 3,
@@ -146,7 +148,8 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 100,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 5,
@@ -157,7 +160,8 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 30,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 6,
@@ -168,7 +172,8 @@
           "category": "餐飲",
           "item": "明天聚餐",
           "amount": 50,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 7,
@@ -179,7 +184,8 @@
           "category": "居家",
           "item": "房租",
           "amount": 9500,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 8,
@@ -190,7 +196,8 @@
           "category": "訂閱服務",
           "item": "訂閱Disney plus",
           "amount": 285,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 9,
@@ -201,7 +208,8 @@
           "category": "其他",
           "item": "其他",
           "amount": 200,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 10,
@@ -212,7 +220,8 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 30,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 16,
@@ -223,7 +232,8 @@
           "category": "交通",
           "item": "交通月票",
           "amount": 1200,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 11,
@@ -234,7 +244,8 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 55,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 15,
@@ -245,7 +256,8 @@
           "category": "醫療",
           "item": "保健食品",
           "amount": 1600,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 13,
@@ -256,7 +268,8 @@
           "category": "醫療",
           "item": "看醫生",
           "amount": 200,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 14,
@@ -267,7 +280,8 @@
           "category": "餐飲",
           "item": "咖啡",
           "amount": 65,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 12,
@@ -278,7 +292,8 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 74,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 17,
@@ -289,7 +304,8 @@
           "category": "餐飲",
           "item": "壽司",
           "amount": 500,
-          "currency": "Yen"
+          "currency": "Yen",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 18,
@@ -300,7 +316,8 @@
           "category": "餐飲",
           "item": "壽司",
           "amount": 500,
-          "currency": "Yen"
+          "currency": "Yen",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 19,
@@ -311,7 +328,8 @@
           "category": "旅遊",
           "item": "飯店",
           "amount": 1500000,
-          "currency": "RP"
+          "currency": "RP",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 20,
@@ -322,7 +340,8 @@
           "category": "餐飲",
           "item": "地瓜球",
           "amount": 20,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         }
       ]
     },
@@ -401,7 +420,8 @@
           "category": "餐飲",
           "item": "咖啡",
           "amount": 55,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         },
         {
           "rowNumber": 3,
@@ -412,7 +432,8 @@
           "category": "餐飲",
           "item": "咖啡",
           "amount": 55,
-          "currency": "TWD"
+          "currency": "TWD",
+          "splitParticipants": ""
         }
       ]
     }
