@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T07:17:50.033Z",
+  "generatedAt": "2026-06-16T07:26:07.299Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -341,7 +341,7 @@
           "item": "地瓜球",
           "amount": 20,
           "currency": "TWD",
-          "splitParticipants": ""
+          "splitParticipants": "我、Danny、Andy、Andy"
         }
       ]
     },
