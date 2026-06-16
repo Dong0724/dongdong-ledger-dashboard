@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T02:14:24.132Z",
+  "generatedAt": "2026-06-16T02:14:39.594Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,14 +43,14 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 11591,
+      "totalExpense": 13191,
       "totalIncome": 0,
-      "net": -11591,
+      "net": -13191,
       "categories": [
         {
           "category": "餐飲",
           "amount": 1406,
-          "ratio": 0.12130100940384782,
+          "ratio": 0.10658782503221893,
           "color": "#FF6B6B"
         },
         {
@@ -62,7 +62,7 @@
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.8196014148908636,
+          "ratio": 0.7201880069744523,
           "color": "#FFD93D"
         },
         {
@@ -73,14 +73,14 @@
         },
         {
           "category": "醫療",
-          "amount": 200,
-          "ratio": 0.01725476662928134,
+          "amount": 1800,
+          "ratio": 0.1364566750056857,
           "color": "#6BCB77"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.024588042446725907,
+          "ratio": 0.021605640209233567,
           "color": "#5C7CFA"
         },
         {
@@ -98,7 +98,7 @@
         {
           "category": "其他",
           "amount": 200,
-          "ratio": 0.01725476662928134,
+          "ratio": 0.01516185277840952,
           "color": "#ADB5BD"
         }
       ],
@@ -109,7 +109,7 @@
         "2026-06-09": 50,
         "2026-06-10": 9985,
         "2026-06-11": 30,
-        "2026-06-12": 55,
+        "2026-06-12": 1655,
         "2026-06-13": 265,
         "2026-06-15": 74
       },
@@ -213,6 +213,16 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 55
+        },
+        {
+          "rowNumber": 15,
+          "month": "2026-06",
+          "timestamp": "2026-06-16T02:14:35.735Z",
+          "date": "2026-06-12",
+          "type": "expense",
+          "category": "醫療",
+          "item": "上周五 保健食品",
+          "amount": 1600
         },
         {
           "rowNumber": 13,
