@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T02:34:43.337Z",
+  "generatedAt": "2026-06-16T03:04:48.017Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -268,13 +268,13 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 55,
+      "totalExpense": 110,
       "totalIncome": 0,
-      "net": -55,
+      "net": -110,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 55,
+          "amount": 110,
           "ratio": 1,
           "color": "#FF6B6B"
         },
@@ -328,7 +328,8 @@
         }
       ],
       "dailyTotals": {
-        "2026-07-01": 55
+        "2026-07-01": 55,
+        "2026-07-02": 55
       },
       "entries": [
         {
@@ -336,6 +337,16 @@
           "month": "2026-07",
           "timestamp": "2026-06-16T02:31:25.334Z",
           "date": "2026-07-01",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "咖啡",
+          "amount": 55
+        },
+        {
+          "rowNumber": 3,
+          "month": "2026-07",
+          "timestamp": "2026-06-16T03:04:43.340Z",
+          "date": "2026-07-02",
           "type": "expense",
           "category": "餐飲",
           "item": "咖啡",
