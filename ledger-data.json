@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T01:56:02.265Z",
+  "generatedAt": "2026-06-16T02:01:26.166Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,14 +43,14 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 11326,
+      "totalExpense": 11526,
       "totalIncome": 0,
-      "net": -11326,
+      "net": -11526,
       "categories": [
         {
           "category": "餐飲",
           "amount": 1341,
-          "ratio": 0.11840014126787922,
+          "ratio": 0.11634565330557002,
           "color": "#FF6B6B"
         },
         {
@@ -62,7 +62,7 @@
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.8387780328447819,
+          "ratio": 0.8242234947076176,
           "color": "#FFD93D"
         },
         {
@@ -80,7 +80,7 @@
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.02516334098534346,
+          "ratio": 0.024726704841228526,
           "color": "#5C7CFA"
         },
         {
@@ -97,8 +97,8 @@
         },
         {
           "category": "其他",
-          "amount": 200,
-          "ratio": 0.017658484901995408,
+          "amount": 400,
+          "ratio": 0.0347041471455839,
           "color": "#ADB5BD"
         }
       ],
@@ -110,7 +110,8 @@
         "2026-06-10": 9985,
         "2026-06-11": 30,
         "2026-06-12": 55,
-        "2026-06-15": 74
+        "2026-06-15": 74,
+        "2026-06-16": 200
       },
       "entries": [
         {
@@ -222,6 +223,16 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 74
+        },
+        {
+          "rowNumber": 13,
+          "month": "2026-06",
+          "timestamp": "2026-06-16T02:01:21.633Z",
+          "date": "2026-06-16",
+          "type": "expense",
+          "category": "其他",
+          "item": "上周六 看醫生",
+          "amount": 200
         }
       ]
     }
