@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T02:14:39.594Z",
+  "generatedAt": "2026-06-16T02:15:09.854Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,26 +43,26 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 13191,
+      "totalExpense": 14391,
       "totalIncome": 0,
-      "net": -13191,
+      "net": -14391,
       "categories": [
         {
           "category": "餐飲",
           "amount": 1406,
-          "ratio": 0.10658782503221893,
+          "ratio": 0.09769995135848794,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
-          "amount": 0,
-          "ratio": 0,
+          "amount": 1200,
+          "ratio": 0.08338544923910778,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.7201880069744523,
+          "ratio": 0.6601348064762699,
           "color": "#FFD93D"
         },
         {
@@ -74,13 +74,13 @@
         {
           "category": "醫療",
           "amount": 1800,
-          "ratio": 0.1364566750056857,
+          "ratio": 0.12507817385866166,
           "color": "#6BCB77"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.021605640209233567,
+          "ratio": 0.019804044194288096,
           "color": "#5C7CFA"
         },
         {
@@ -98,7 +98,7 @@
         {
           "category": "其他",
           "amount": 200,
-          "ratio": 0.01516185277840952,
+          "ratio": 0.01389757487318463,
           "color": "#ADB5BD"
         }
       ],
@@ -108,7 +108,7 @@
         "2026-06-08": 30,
         "2026-06-09": 50,
         "2026-06-10": 9985,
-        "2026-06-11": 30,
+        "2026-06-11": 1230,
         "2026-06-12": 1655,
         "2026-06-13": 265,
         "2026-06-15": 74
@@ -203,6 +203,16 @@
           "category": "餐飲",
           "item": "早餐",
           "amount": 30
+        },
+        {
+          "rowNumber": 16,
+          "month": "2026-06",
+          "timestamp": "2026-06-16T02:15:06.038Z",
+          "date": "2026-06-11",
+          "type": "expense",
+          "category": "交通",
+          "item": "上周四 交通月票",
+          "amount": 1200
         },
         {
           "rowNumber": 11,
