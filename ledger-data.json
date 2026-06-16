@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T03:04:48.017Z",
+  "generatedAt": "2026-06-16T06:03:11.512Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -122,7 +122,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "買蛋糕",
-          "amount": 580
+          "amount": 580,
+          "currency": "TWD"
         },
         {
           "rowNumber": 2,
@@ -132,7 +133,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "買食材",
-          "amount": 422
+          "amount": 422,
+          "currency": "TWD"
         },
         {
           "rowNumber": 3,
@@ -142,7 +144,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "早餐",
-          "amount": 100
+          "amount": 100,
+          "currency": "TWD"
         },
         {
           "rowNumber": 5,
@@ -152,7 +155,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "早餐",
-          "amount": 30
+          "amount": 30,
+          "currency": "TWD"
         },
         {
           "rowNumber": 6,
@@ -162,7 +166,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "明天聚餐",
-          "amount": 50
+          "amount": 50,
+          "currency": "TWD"
         },
         {
           "rowNumber": 7,
@@ -172,7 +177,8 @@
           "type": "expense",
           "category": "居家",
           "item": "房租",
-          "amount": 9500
+          "amount": 9500,
+          "currency": "TWD"
         },
         {
           "rowNumber": 8,
@@ -182,7 +188,8 @@
           "type": "expense",
           "category": "訂閱服務",
           "item": "訂閱Disney plus",
-          "amount": 285
+          "amount": 285,
+          "currency": "TWD"
         },
         {
           "rowNumber": 9,
@@ -192,7 +199,8 @@
           "type": "expense",
           "category": "其他",
           "item": "其他",
-          "amount": 200
+          "amount": 200,
+          "currency": "TWD"
         },
         {
           "rowNumber": 10,
@@ -202,7 +210,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "早餐",
-          "amount": 30
+          "amount": 30,
+          "currency": "TWD"
         },
         {
           "rowNumber": 16,
@@ -212,7 +221,8 @@
           "type": "expense",
           "category": "交通",
           "item": "交通月票",
-          "amount": 1200
+          "amount": 1200,
+          "currency": "TWD"
         },
         {
           "rowNumber": 11,
@@ -222,7 +232,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "早餐",
-          "amount": 55
+          "amount": 55,
+          "currency": "TWD"
         },
         {
           "rowNumber": 15,
@@ -232,7 +243,8 @@
           "type": "expense",
           "category": "醫療",
           "item": "保健食品",
-          "amount": 1600
+          "amount": 1600,
+          "currency": "TWD"
         },
         {
           "rowNumber": 13,
@@ -242,7 +254,8 @@
           "type": "expense",
           "category": "醫療",
           "item": "看醫生",
-          "amount": 200
+          "amount": 200,
+          "currency": "TWD"
         },
         {
           "rowNumber": 14,
@@ -252,7 +265,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "咖啡",
-          "amount": 65
+          "amount": 65,
+          "currency": "TWD"
         },
         {
           "rowNumber": 12,
@@ -262,7 +276,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "早餐",
-          "amount": 74
+          "amount": 74,
+          "currency": "TWD"
         }
       ]
     },
@@ -340,7 +355,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "咖啡",
-          "amount": 55
+          "amount": 55,
+          "currency": "TWD"
         },
         {
           "rowNumber": 3,
@@ -350,7 +366,8 @@
           "type": "expense",
           "category": "餐飲",
           "item": "咖啡",
-          "amount": 55
+          "amount": 55,
+          "currency": "TWD"
         }
       ]
     }

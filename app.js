@@ -30,6 +30,10 @@ const formatter = new Intl.NumberFormat("zh-TW", {
   maximumFractionDigits: 0
 });
 
+const numberFormatter = new Intl.NumberFormat("zh-TW", {
+  maximumFractionDigits: 2
+});
+
 init();
 
 async function init() {
@@ -156,13 +160,13 @@ function renderCalendar(month) {
 
   for (let day = 1; day <= lastDay; day += 1) {
     const date = `${month.month}-${String(day).padStart(2, "0")}`;
-    const total = month.dailyTotals[date] ?? 0;
+    const totalLabel = dailyTotalLabel(month, date);
     const button = document.createElement("button");
     button.className = `day-button${state.selectedDate === date ? " is-selected" : ""}`;
     button.type = "button";
     button.innerHTML = `
       <span class="day-number">${day}</span>
-      <span class="day-total">${total > 0 ? money(total) : ""}</span>
+      <span class="day-total">${escapeHtml(totalLabel)}</span>
     `;
     button.addEventListener("click", () => {
       state.selectedDate = date;
@@ -172,7 +176,7 @@ function renderCalendar(month) {
   }
 
   elements.calendarTitle.textContent = `${month.month}`;
-  elements.selectedDayTotal.textContent = `${state.selectedDate}・${money(month.dailyTotals[state.selectedDate] ?? 0)}`;
+  elements.selectedDayTotal.textContent = `${state.selectedDate}・${dailyTotalLabel(month, state.selectedDate) || money(0)}`;
   elements.calendarGrid.replaceChildren(...cells);
 }
 
@@ -186,7 +190,7 @@ function renderEntries(month) {
         <td>${escapeHtml(entry.date)}</td>
         <td>${categoryPill(entry.category)}</td>
         <td>${escapeHtml(entry.item)}</td>
-        <td class="amount-cell">${entry.type === "income" ? "+" : ""}${money(entry.amount)}</td>
+        <td class="amount-cell">${entry.type === "income" ? "+" : ""}${formatEntryAmount(entry)}</td>
       `;
       return row;
     });
@@ -215,7 +219,7 @@ function renderDayEntries(month) {
       item.style.borderColor = colorForCategory(entry.category);
       item.innerHTML = `
         <strong>${escapeHtml(entry.item)}</strong>
-        <span>${escapeHtml(entry.category)}・${entry.type === "income" ? "+" : ""}${money(entry.amount)}</span>
+        <span>${escapeHtml(entry.category)}・${entry.type === "income" ? "+" : ""}${formatEntryAmount(entry)}</span>
       `;
       return item;
     })
@@ -245,6 +249,25 @@ function firstDateOfMonth(month) {
 
 function money(value) {
   return formatter.format(Number(value || 0));
+}
+
+function formatEntryAmount(entry) {
+  const currency = entry.currency || "TWD";
+  if (currency === "TWD") {
+    return money(entry.amount);
+  }
+  return `${numberFormatter.format(Number(entry.amount || 0))} ${currency}`;
+}
+
+function dailyTotalLabel(month, date) {
+  const totals = new Map();
+  for (const entry of month.entries.filter((item) => item.date === date && item.type === "expense")) {
+    const currency = entry.currency || "TWD";
+    totals.set(currency, (totals.get(currency) ?? 0) + Number(entry.amount || 0));
+  }
+  return [...totals.entries()]
+    .map(([currency, amount]) => (currency === "TWD" ? money(amount) : `${numberFormatter.format(amount)} ${currency}`))
+    .join(" / ");
 }
 
 function percent(value) {
