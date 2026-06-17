@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T00:49:15.179Z",
+  "generatedAt": "2026-06-17T00:51:50.147Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -25,7 +25,7 @@
     },
     {
       "name": "訂閱服務",
-      "color": "#5C7CFA"
+      "color": "#F06595"
     },
     {
       "name": "學習",
@@ -81,7 +81,7 @@
           "category": "訂閱服務",
           "amount": 285,
           "ratio": 0.01698551761129984,
-          "color": "#5C7CFA"
+          "color": "#F06595"
         },
         {
           "category": "學習",
@@ -410,7 +410,7 @@
           "category": "訂閱服務",
           "amount": 0,
           "ratio": 0,
-          "color": "#5C7CFA"
+          "color": "#F06595"
         },
         {
           "category": "學習",
