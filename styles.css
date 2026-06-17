@@ -151,6 +151,10 @@ select {
   margin-top: 16px;
 }
 
+.detail-grid > .table-panel:last-child {
+  grid-column: 1 / -1;
+}
+
 .panel {
   border-radius: 8px;
   padding: 18px;
@@ -353,6 +357,10 @@ table {
   min-width: 680px;
 }
 
+.compact-table {
+  min-width: 520px;
+}
+
 th,
 td {
   border-bottom: 1px solid var(--line);
@@ -428,6 +436,12 @@ td {
   border: 1px dashed var(--line);
   border-radius: 8px;
   background: rgba(255, 250, 240, 0.5);
+}
+
+.empty-table-cell {
+  height: 72px;
+  color: var(--muted);
+  text-align: center;
 }
 
 .footer {

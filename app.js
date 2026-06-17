@@ -21,6 +21,10 @@ const elements = {
   dayTitle: document.querySelector("#dayTitle"),
   dayCount: document.querySelector("#dayCount"),
   dayEntries: document.querySelector("#dayEntries"),
+  splitTable: document.querySelector("#splitTable"),
+  splitCount: document.querySelector("#splitCount"),
+  foreignTable: document.querySelector("#foreignTable"),
+  foreignCount: document.querySelector("#foreignCount"),
   generatedAt: document.querySelector("#generatedAt")
 };
 
@@ -99,8 +103,10 @@ function render() {
   renderSummary(month);
   renderChart(month);
   renderCalendar(month);
-  renderEntries(month);
   renderDayEntries(month);
+  renderSplitEntries(month);
+  renderForeignEntries(month);
+  renderEntries(month);
   renderFooter();
 }
 
@@ -228,6 +234,61 @@ function renderDayEntries(month) {
   );
 }
 
+function renderSplitEntries(month) {
+  const entries = month.entries.filter((entry) => entry.splitParticipants);
+  elements.splitCount.textContent = `${entries.length} 筆`;
+
+  if (entries.length === 0) {
+    elements.splitTable.replaceChildren(emptyTableRow("本月沒有拆帳紀錄", 4));
+    return;
+  }
+
+  elements.splitTable.replaceChildren(
+    ...entries
+      .slice()
+      .reverse()
+      .map((entry) => {
+        const participants = splitParticipantList(entry.splitParticipants);
+        const payers = participants.filter((name) => !isSelfParticipant(name));
+        const perPerson = participants.length > 0 ? Number(entry.amount || 0) / participants.length : 0;
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${escapeHtml(entry.date)}</td>
+          <td>${escapeHtml(entry.item)}</td>
+          <td>${escapeHtml(payers.length ? payers.join("、") : entry.splitParticipants)}</td>
+          <td class="amount-cell">${formatSplitAmount(perPerson, entry.currency)}</td>
+        `;
+        return row;
+      })
+  );
+}
+
+function renderForeignEntries(month) {
+  const entries = month.entries.filter((entry) => entry.currency && entry.currency !== "TWD");
+  elements.foreignCount.textContent = `${entries.length} 筆`;
+
+  if (entries.length === 0) {
+    elements.foreignTable.replaceChildren(emptyTableRow("本月沒有外幣花費", 4));
+    return;
+  }
+
+  elements.foreignTable.replaceChildren(
+    ...entries
+      .slice()
+      .reverse()
+      .map((entry) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${escapeHtml(entry.date)}</td>
+          <td>${escapeHtml(entry.currency)}</td>
+          <td>${escapeHtml(entry.item)}</td>
+          <td class="amount-cell">${formatEntryAmount(entry)}</td>
+        `;
+        return row;
+      })
+  );
+}
+
 function renderFooter() {
   const generatedAt = state.payload.generatedAt ? new Date(state.payload.generatedAt) : undefined;
   elements.generatedAt.textContent = generatedAt ? `更新時間：${generatedAt.toLocaleString("zh-TW")}` : "";
@@ -259,6 +320,30 @@ function formatEntryAmount(entry) {
     return money(entry.amount);
   }
   return `${numberFormatter.format(Number(entry.amount || 0))} ${currency}`;
+}
+
+function formatSplitAmount(value, currency) {
+  if ((currency || "TWD") === "TWD") {
+    return money(value);
+  }
+  return `${numberFormatter.format(Number(value || 0))} ${currency}`;
+}
+
+function splitParticipantList(value) {
+  return String(value || "")
+    .split(/[、,，/]/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function isSelfParticipant(name) {
+  return /^(我|自己|東東|DongDong|me)$/i.test(name);
+}
+
+function emptyTableRow(message, colSpan) {
+  const row = document.createElement("tr");
+  row.innerHTML = `<td class="empty-table-cell" colspan="${colSpan}">${escapeHtml(message)}</td>`;
+  return row;
 }
 
 function percent(value) {
