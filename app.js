@@ -13,6 +13,7 @@ const elements = {
   netTotal: document.querySelector("#netTotal"),
   pieChart: document.querySelector("#pieChart"),
   categoryLegend: document.querySelector("#categoryLegend"),
+  calendarPanel: document.querySelector("#calendarPanel"),
   calendarTitle: document.querySelector("#calendarTitle"),
   selectedDayTotal: document.querySelector("#selectedDayTotal"),
   calendarGrid: document.querySelector("#calendarGrid"),
@@ -37,6 +38,21 @@ const formatter = new Intl.NumberFormat("zh-TW", {
 const numberFormatter = new Intl.NumberFormat("zh-TW", {
   maximumFractionDigits: 2
 });
+
+const calendarThemes = [
+  { className: "theme-new-year", label: "春節小馬" },
+  { className: "theme-plum", label: "梅見小馬" },
+  { className: "theme-spring", label: "春日小馬" },
+  { className: "theme-sakura", label: "櫻花小馬" },
+  { className: "theme-fresh-green", label: "新綠小馬" },
+  { className: "theme-dragon-boat", label: "端午小馬" },
+  { className: "theme-summer-race", label: "夏日賽馬" },
+  { className: "theme-seaside", label: "海風小馬" },
+  { className: "theme-moon", label: "中秋小馬" },
+  { className: "theme-autumn", label: "秋收小馬" },
+  { className: "theme-maple", label: "楓葉小馬" },
+  { className: "theme-christmas", label: "聖誕小馬" }
+];
 
 init();
 
@@ -151,6 +167,7 @@ function renderChart(month) {
 
 function renderCalendar(month) {
   const [year, monthNumber] = month.month.split("-").map(Number);
+  applyCalendarTheme(monthNumber);
   const first = new Date(year, monthNumber - 1, 1);
   const lastDay = new Date(year, monthNumber, 0).getDate();
   const blanks = first.getDay();
@@ -181,9 +198,15 @@ function renderCalendar(month) {
     cells.push(button);
   }
 
-  elements.calendarTitle.textContent = `${month.month}`;
+  const theme = calendarThemes[monthNumber - 1] ?? calendarThemes[0];
+  elements.calendarTitle.textContent = `${month.month}｜${theme.label}`;
   elements.selectedDayTotal.textContent = `${state.selectedDate}・${money(month.dailyTotals[state.selectedDate] ?? 0)}`;
   elements.calendarGrid.replaceChildren(...cells);
+}
+
+function applyCalendarTheme(monthNumber) {
+  const theme = calendarThemes[monthNumber - 1] ?? calendarThemes[0];
+  elements.calendarPanel.className = `panel calendar-panel ${theme.className}`;
 }
 
 function renderEntries(month) {

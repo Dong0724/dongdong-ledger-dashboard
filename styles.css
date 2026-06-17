@@ -285,6 +285,275 @@ select {
   font-weight: 650;
 }
 
+.calendar-panel {
+  --cal-edge-a: rgba(255, 171, 145, 0.34);
+  --cal-edge-b: rgba(126, 203, 168, 0.26);
+  --cal-edge-c: rgba(255, 225, 135, 0.22);
+  --cal-ink: #8b5a3c;
+  --cal-mane: #4f3227;
+  --cal-muzzle: #fff1df;
+  --cal-blaze: #fff9ee;
+  --cal-cheek: #ffb6aa;
+  --cal-sash: #e8585f;
+  --cal-deco: "✦";
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 0% 0%, var(--cal-edge-a), transparent 42%),
+    radial-gradient(ellipse at 100% 0%, var(--cal-edge-b), transparent 43%),
+    radial-gradient(ellipse at 100% 100%, var(--cal-edge-c), transparent 44%),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(255, 252, 246, 0.9));
+}
+
+.calendar-panel::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  z-index: 0;
+  border-radius: 8px;
+  background: radial-gradient(ellipse at center, rgba(255, 253, 248, 0.96) 0 48%, rgba(255, 253, 248, 0.34) 77%, transparent 100%);
+  pointer-events: none;
+}
+
+.calendar-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.calendar-ribbon {
+  position: absolute;
+  width: 54%;
+  height: 24px;
+  border-radius: 999px;
+  opacity: 0.42;
+  filter: blur(0.2px);
+  transform: rotate(-15deg);
+}
+
+.ribbon-one {
+  top: 20px;
+  left: -16%;
+  background: linear-gradient(90deg, transparent, var(--cal-edge-a), transparent);
+}
+
+.ribbon-two {
+  right: -18%;
+  bottom: 34px;
+  background: linear-gradient(90deg, transparent, var(--cal-edge-b), transparent);
+  transform: rotate(-20deg);
+}
+
+.calendar-deco {
+  position: absolute;
+  color: color-mix(in srgb, var(--cal-ink), white 14%);
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.28;
+}
+
+.calendar-deco::before {
+  content: var(--cal-deco);
+}
+
+.deco-one {
+  top: 18px;
+  right: 22px;
+}
+
+.deco-two {
+  left: 22px;
+  bottom: 20px;
+  transform: rotate(-10deg);
+}
+
+.horse-mascot {
+  position: absolute;
+  right: -6px;
+  bottom: -18px;
+  width: min(174px, 32vw);
+  min-width: 112px;
+  opacity: 0.2;
+  transform: rotate(-3deg);
+}
+
+.horse-shadow {
+  fill: rgba(86, 63, 31, 0.2);
+}
+
+.horse-tail,
+.horse-body,
+.horse-face,
+.horse-leg {
+  fill: var(--cal-ink);
+}
+
+.horse-mane {
+  fill: var(--cal-mane);
+}
+
+.horse-ear {
+  fill: color-mix(in srgb, var(--cal-ink), white 7%);
+}
+
+.horse-muzzle {
+  fill: var(--cal-muzzle);
+}
+
+.horse-blaze {
+  fill: var(--cal-blaze);
+}
+
+.horse-eye {
+  fill: #2d241d;
+}
+
+.horse-cheek {
+  fill: var(--cal-cheek);
+  opacity: 0.8;
+}
+
+.horse-nose {
+  fill: none;
+  stroke: #6b4633;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.horse-sash {
+  fill: none;
+  stroke: var(--cal-sash);
+  stroke-width: 8;
+  stroke-linecap: round;
+  opacity: 0.9;
+}
+
+.theme-new-year {
+  --cal-edge-a: rgba(255, 111, 97, 0.36);
+  --cal-edge-b: rgba(255, 205, 93, 0.34);
+  --cal-edge-c: rgba(210, 51, 75, 0.16);
+  --cal-ink: #a45b38;
+  --cal-mane: #513226;
+  --cal-cheek: #ff9c9c;
+  --cal-sash: #d7263d;
+  --cal-deco: "福";
+}
+
+.theme-plum {
+  --cal-edge-a: rgba(242, 151, 169, 0.32);
+  --cal-edge-b: rgba(190, 214, 150, 0.25);
+  --cal-edge-c: rgba(248, 211, 224, 0.3);
+  --cal-ink: #8d5b4c;
+  --cal-mane: #4a2d35;
+  --cal-sash: #d35d7b;
+  --cal-deco: "梅";
+}
+
+.theme-spring {
+  --cal-edge-a: rgba(141, 217, 164, 0.32);
+  --cal-edge-b: rgba(255, 201, 132, 0.26);
+  --cal-edge-c: rgba(186, 226, 148, 0.25);
+  --cal-ink: #8d623c;
+  --cal-mane: #4d3525;
+  --cal-sash: #70b77e;
+  --cal-deco: "春";
+}
+
+.theme-sakura {
+  --cal-edge-a: rgba(255, 180, 203, 0.36);
+  --cal-edge-b: rgba(176, 214, 255, 0.24);
+  --cal-edge-c: rgba(255, 221, 158, 0.2);
+  --cal-ink: #9a6448;
+  --cal-mane: #4c2c2e;
+  --cal-cheek: #ff9eb5;
+  --cal-sash: #f27ca2;
+  --cal-deco: "桜";
+}
+
+.theme-fresh-green {
+  --cal-edge-a: rgba(109, 207, 155, 0.3);
+  --cal-edge-b: rgba(111, 196, 211, 0.24);
+  --cal-edge-c: rgba(238, 214, 112, 0.22);
+  --cal-ink: #806241;
+  --cal-mane: #3f3526;
+  --cal-sash: #46b497;
+  --cal-deco: "若";
+}
+
+.theme-dragon-boat {
+  --cal-edge-a: rgba(107, 190, 196, 0.34);
+  --cal-edge-b: rgba(119, 177, 106, 0.28);
+  --cal-edge-c: rgba(255, 198, 82, 0.27);
+  --cal-ink: #85583b;
+  --cal-mane: #40342a;
+  --cal-sash: #2f9c95;
+  --cal-deco: "粽";
+}
+
+.theme-summer-race {
+  --cal-edge-a: rgba(255, 190, 92, 0.35);
+  --cal-edge-b: rgba(85, 178, 231, 0.26);
+  --cal-edge-c: rgba(255, 112, 87, 0.2);
+  --cal-ink: #9b633a;
+  --cal-mane: #54301f;
+  --cal-sash: #ff8a00;
+  --cal-deco: "駿";
+}
+
+.theme-seaside {
+  --cal-edge-a: rgba(91, 192, 235, 0.34);
+  --cal-edge-b: rgba(137, 220, 214, 0.28);
+  --cal-edge-c: rgba(255, 223, 148, 0.22);
+  --cal-ink: #8b6348;
+  --cal-mane: #3e3d4c;
+  --cal-sash: #35a7d6;
+  --cal-deco: "海";
+}
+
+.theme-moon {
+  --cal-edge-a: rgba(255, 215, 128, 0.32);
+  --cal-edge-b: rgba(166, 172, 236, 0.24);
+  --cal-edge-c: rgba(231, 181, 107, 0.28);
+  --cal-ink: #8a5a42;
+  --cal-mane: #332b40;
+  --cal-sash: #c5902f;
+  --cal-deco: "月";
+}
+
+.theme-autumn {
+  --cal-edge-a: rgba(220, 133, 87, 0.32);
+  --cal-edge-b: rgba(232, 189, 99, 0.28);
+  --cal-edge-c: rgba(139, 181, 116, 0.22);
+  --cal-ink: #87573a;
+  --cal-mane: #42291f;
+  --cal-sash: #b86734;
+  --cal-deco: "穗";
+}
+
+.theme-maple {
+  --cal-edge-a: rgba(218, 92, 82, 0.34);
+  --cal-edge-b: rgba(244, 176, 89, 0.28);
+  --cal-edge-c: rgba(126, 99, 77, 0.15);
+  --cal-ink: #81513b;
+  --cal-mane: #3d2824;
+  --cal-cheek: #f6a08d;
+  --cal-sash: #c94f3d;
+  --cal-deco: "楓";
+}
+
+.theme-christmas {
+  --cal-edge-a: rgba(218, 72, 84, 0.28);
+  --cal-edge-b: rgba(70, 158, 124, 0.3);
+  --cal-edge-c: rgba(255, 224, 156, 0.24);
+  --cal-ink: #8a573d;
+  --cal-mane: #2f3f35;
+  --cal-sash: #cf3149;
+  --cal-deco: "星";
+}
+
 .calendar-head,
 .section-title {
   display: flex;
@@ -293,6 +562,13 @@ select {
   gap: 12px;
   min-height: 30px;
   margin-bottom: 12px;
+}
+
+.calendar-head,
+.weekday-grid,
+.calendar-grid {
+  position: relative;
+  z-index: 2;
 }
 
 .weekday-grid,
@@ -318,7 +594,8 @@ select {
   min-height: 76px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fffaf0;
+  background: rgba(255, 250, 240, 0.86);
+  backdrop-filter: blur(1px);
   color: var(--ink);
   padding: 8px;
   text-align: left;
@@ -332,6 +609,7 @@ select {
 .day-button.is-selected {
   border-color: var(--accent);
   outline: 2px solid rgba(47, 93, 98, 0.18);
+  background: rgba(255, 253, 248, 0.96);
 }
 
 .day-number {
