@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DongDong Ledger Dashboard</title>
-    <link rel="stylesheet" href="./styles.css?v=20260617-current-month" />
+    <link rel="stylesheet" href="./styles.css?v=20260617-wealth-banner" />
   </head>
   <body>
     <main class="app-shell">
@@ -19,6 +19,22 @@
           <button id="nextMonth" class="icon-button" type="button" aria-label="下一個月">›</button>
         </div>
       </header>
+
+      <section class="wealth-banner" aria-label="財富管理橫幅">
+        <div class="wealth-banner-copy">
+          <span>Wealth Ledger</span>
+          <strong>把每一筆日常，整理成更從容的選擇。</strong>
+          <p>以溫柔的月度視角，看見現金流、分類占比與生活節奏。</p>
+        </div>
+        <div class="wealth-banner-art" aria-hidden="true">
+          <span class="ledger-line line-one"></span>
+          <span class="ledger-line line-two"></span>
+          <span class="coin coin-one"></span>
+          <span class="coin coin-two"></span>
+          <span class="leaf leaf-one"></span>
+          <span class="leaf leaf-two"></span>
+        </div>
+      </section>
 
       <section class="summary-strip" aria-label="月份摘要">
         <div>
@@ -157,6 +173,6 @@
         <span id="generatedAt"></span>
       </footer>
     </main>
-    <script src="./app.js?v=20260617-current-month" type="module"></script>
+    <script src="./app.js?v=20260617-wealth-banner" type="module"></script>
   </body>
 </html>

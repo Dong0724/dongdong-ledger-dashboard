@@ -7,6 +7,10 @@
   --panel: #fffdf8;
   --panel-soft: #f0ebe1;
   --accent: #2f5d62;
+  --gold: #d6a83d;
+  --sage: #6f8f72;
+  --font-literary: "Noto Serif TC", "Source Han Serif TC", "Songti TC", "PMingLiU", "Microsoft JhengHei", serif;
+  --font-ui: "Noto Serif TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
   --shadow: 0 18px 44px rgba(66, 52, 32, 0.12);
 }
 
@@ -22,11 +26,7 @@ body {
     radial-gradient(circle at top left, rgba(47, 93, 98, 0.12), transparent 34%),
     var(--bg);
   color: var(--ink);
-  font-family:
-    "Noto Sans TC",
-    "Microsoft JhengHei",
-    system-ui,
-    sans-serif;
+  font-family: var(--font-ui);
   letter-spacing: 0;
 }
 
@@ -66,6 +66,8 @@ h2 {
 h1 {
   font-size: clamp(1.65rem, 2.6vw, 2.4rem);
   line-height: 1.12;
+  font-family: var(--font-literary);
+  font-weight: 800;
 }
 
 h2 {
@@ -99,6 +101,152 @@ select {
   width: 100%;
   border-radius: 8px;
   padding: 0 12px;
+}
+
+.wealth-banner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.42fr);
+  min-height: 148px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(226, 198, 125, 0.72);
+  border-radius: 8px;
+  background:
+    linear-gradient(105deg, rgba(255, 250, 222, 0.98), rgba(255, 243, 195, 0.94) 48%, rgba(250, 232, 174, 0.88)),
+    linear-gradient(180deg, #fff9df, #f8e8ae);
+  box-shadow: 0 18px 44px rgba(122, 92, 33, 0.13);
+}
+
+.wealth-banner::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  z-index: 0;
+  border: 1px solid rgba(169, 129, 44, 0.18);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(166, 126, 39, 0.08) 1px, transparent 1px) 0 0 / 36px 36px,
+    linear-gradient(180deg, rgba(166, 126, 39, 0.06) 1px, transparent 1px) 0 0 / 36px 36px;
+  pointer-events: none;
+}
+
+.wealth-banner-copy {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 26px clamp(20px, 4vw, 42px);
+}
+
+.wealth-banner-copy span {
+  color: #8b6a26;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.wealth-banner-copy strong {
+  max-width: 700px;
+  font-family: var(--font-literary);
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+.wealth-banner-copy p {
+  max-width: 620px;
+  margin: 0;
+  color: #75633d;
+  font-size: clamp(0.92rem, 1.4vw, 1.05rem);
+  line-height: 1.7;
+}
+
+.wealth-banner-art {
+  position: relative;
+  z-index: 1;
+  min-height: 148px;
+}
+
+.ledger-line {
+  position: absolute;
+  right: 24px;
+  width: min(240px, 42vw);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(132, 101, 35, 0.34));
+}
+
+.line-one {
+  top: 46px;
+}
+
+.line-two {
+  top: 92px;
+}
+
+.coin {
+  position: absolute;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255, 255, 255, 0.76), transparent 26%),
+    linear-gradient(145deg, #f9d96b, #c89324);
+  box-shadow: inset 0 0 0 1px rgba(126, 90, 20, 0.22), 0 10px 20px rgba(126, 90, 20, 0.16);
+}
+
+.coin::after {
+  content: "";
+  position: absolute;
+  inset: 24%;
+  border: 1px solid rgba(112, 79, 17, 0.34);
+  border-radius: 50%;
+}
+
+.coin-one {
+  right: 72px;
+  top: 30px;
+  width: 46px;
+  height: 46px;
+}
+
+.coin-two {
+  right: 122px;
+  bottom: 28px;
+  width: 34px;
+  height: 34px;
+}
+
+.leaf {
+  position: absolute;
+  border-radius: 70% 0 70% 0;
+  background: linear-gradient(135deg, #97aa6c, #57785e);
+  opacity: 0.86;
+  transform: rotate(-28deg);
+}
+
+.leaf::after {
+  content: "";
+  position: absolute;
+  inset: 47% 10% auto 10%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.52);
+  transform: rotate(26deg);
+}
+
+.leaf-one {
+  right: 36px;
+  bottom: 30px;
+  width: 46px;
+  height: 24px;
+}
+
+.leaf-two {
+  right: 170px;
+  top: 34px;
+  width: 32px;
+  height: 18px;
+  transform: rotate(20deg);
 }
 
 .summary-strip {
@@ -736,6 +884,17 @@ td {
     flex-direction: column;
   }
 
+  .wealth-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .wealth-banner-art {
+    position: absolute;
+    inset: 0;
+    min-height: auto;
+    opacity: 0.42;
+  }
+
   .summary-strip,
   .dashboard-grid,
   .detail-grid {
@@ -756,6 +915,18 @@ td {
 
   .summary-strip {
     gap: 8px;
+  }
+
+  .wealth-banner {
+    min-height: 168px;
+  }
+
+  .wealth-banner-copy {
+    padding: 22px 18px;
+  }
+
+  .wealth-banner-copy p {
+    font-size: 0.9rem;
   }
 
   .summary-strip > div {
