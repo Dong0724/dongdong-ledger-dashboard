@@ -349,10 +349,10 @@ select {
 .calendar-deco {
   position: absolute;
   color: color-mix(in srgb, var(--cal-ink), white 14%);
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 800;
   line-height: 1;
-  opacity: 0.28;
+  opacity: 0.2;
 }
 
 .calendar-deco::before {
@@ -360,8 +360,8 @@ select {
 }
 
 .deco-one {
-  top: 18px;
-  right: 22px;
+  top: 17px;
+  left: 24px;
 }
 
 .deco-two {
@@ -562,6 +562,10 @@ select {
   gap: 12px;
   min-height: 30px;
   margin-bottom: 12px;
+}
+
+.calendar-head strong {
+  padding-left: 28px;
 }
 
 .calendar-head,

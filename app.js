@@ -64,7 +64,7 @@ async function init() {
   }
 
   state.payload = await response.json();
-  state.monthIndex = Math.max(0, state.payload.months.length - 1);
+  state.monthIndex = preferredMonthIndex(state.payload.months);
   bindEvents();
   populateMonthSelect();
   render();
@@ -128,6 +128,17 @@ function render() {
 
 function currentMonth() {
   return state.payload?.months?.[state.monthIndex];
+}
+
+function preferredMonthIndex(months) {
+  const currentMonth = currentMonthKey();
+  const currentIndex = months.findIndex((month) => month.month === currentMonth);
+  return currentIndex >= 0 ? currentIndex : Math.max(0, months.length - 1);
+}
+
+function currentMonthKey() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
 }
 
 function renderSummary(month) {
