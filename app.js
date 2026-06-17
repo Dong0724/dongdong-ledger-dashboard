@@ -13,6 +13,8 @@ const elements = {
   netTotal: document.querySelector("#netTotal"),
   pieChart: document.querySelector("#pieChart"),
   categoryLegend: document.querySelector("#categoryLegend"),
+  zodiacMascotStage: document.querySelector("#zodiacMascotStage"),
+  zodiacMascot: document.querySelector("#zodiacMascot"),
   calendarPanel: document.querySelector("#calendarPanel"),
   calendarTitle: document.querySelector("#calendarTitle"),
   selectedDayTotal: document.querySelector("#selectedDayTotal"),
@@ -40,19 +42,41 @@ const numberFormatter = new Intl.NumberFormat("zh-TW", {
 });
 
 const calendarThemes = [
-  { className: "theme-new-year", label: "春節躍馬", scene: "jump" },
-  { className: "theme-plum", label: "梅下小憩", scene: "eat" },
-  { className: "theme-spring", label: "春日奔跑", scene: "run" },
-  { className: "theme-sakura", label: "櫻花跳跳", scene: "jump" },
-  { className: "theme-fresh-green", label: "新綠野餐", scene: "eat" },
-  { className: "theme-dragon-boat", label: "端午包粽", scene: "wrap" },
-  { className: "theme-summer-race", label: "夏日賽馬", scene: "run" },
-  { className: "theme-seaside", label: "海風跳躍", scene: "jump" },
-  { className: "theme-moon", label: "月下品味", scene: "eat" },
-  { className: "theme-autumn", label: "秋收手作", scene: "wrap" },
-  { className: "theme-maple", label: "楓間奔跑", scene: "run" },
-  { className: "theme-christmas", label: "聖誕點心", scene: "eat" }
+  { className: "theme-new-year", label: "春節", scene: "run" },
+  { className: "theme-plum", label: "梅香", scene: "run" },
+  { className: "theme-spring", label: "春日", scene: "run" },
+  { className: "theme-sakura", label: "櫻花", scene: "run" },
+  { className: "theme-fresh-green", label: "新綠", scene: "run" },
+  { className: "theme-dragon-boat", label: "端午", scene: "wrap" },
+  { className: "theme-summer-race", label: "盛夏", scene: "run" },
+  { className: "theme-seaside", label: "海風", scene: "run" },
+  { className: "theme-moon", label: "中秋", scene: "run" },
+  { className: "theme-autumn", label: "秋收", scene: "run" },
+  { className: "theme-maple", label: "楓紅", scene: "run" },
+  { className: "theme-christmas", label: "聖誕", scene: "run" }
 ];
+
+const zodiacCycle = [
+  { key: "rat", name: "鼠" },
+  { key: "ox", name: "牛" },
+  { key: "tiger", name: "虎" },
+  { key: "rabbit", name: "兔" },
+  { key: "dragon", name: "龍" },
+  { key: "snake", name: "蛇" },
+  { key: "horse", name: "馬" },
+  { key: "goat", name: "羊" },
+  { key: "monkey", name: "猴" },
+  { key: "rooster", name: "雞" },
+  { key: "dog", name: "狗" },
+  { key: "pig", name: "豬" }
+];
+
+const zodiacAssetSets = {
+  horse: {
+    run: "./assets/horse-run-v2.png",
+    wrap: "./assets/horse-wrap-v2.png"
+  }
+};
 
 init();
 
@@ -178,7 +202,8 @@ function renderChart(month) {
 
 function renderCalendar(month) {
   const [year, monthNumber] = month.month.split("-").map(Number);
-  applyCalendarTheme(monthNumber);
+  const zodiac = zodiacForYear(year);
+  applyCalendarTheme(year, monthNumber);
   const first = new Date(year, monthNumber - 1, 1);
   const lastDay = new Date(year, monthNumber, 0).getDate();
   const blanks = first.getDay();
@@ -210,17 +235,31 @@ function renderCalendar(month) {
   }
 
   const theme = calendarThemes[monthNumber - 1] ?? calendarThemes[0];
-  elements.calendarTitle.textContent = `${month.month}｜${theme.label}`;
+  elements.calendarTitle.textContent = `${month.month}｜${zodiac.name}年・${theme.label}`;
   elements.selectedDayTotal.textContent = `${state.selectedDate}・${money(month.dailyTotals[state.selectedDate] ?? 0)}`;
   elements.calendarGrid.replaceChildren(...cells);
 }
 
-function applyCalendarTheme(monthNumber) {
+function applyCalendarTheme(year, monthNumber) {
   const theme = calendarThemes[monthNumber - 1] ?? calendarThemes[0];
+  const zodiac = zodiacForYear(year);
+  const asset = zodiacAssetSets[zodiac.key]?.[theme.scene];
   elements.calendarPanel.className = `panel calendar-panel ${theme.className}`;
   document.body.classList.remove(...calendarThemes.map((item) => item.className));
   document.body.classList.add(theme.className);
-  document.body.dataset.horseScene = theme.scene;
+  document.body.dataset.zodiac = zodiac.key;
+  document.body.dataset.mascotScene = theme.scene;
+  elements.zodiacMascotStage.hidden = !asset;
+  if (asset) {
+    elements.zodiacMascot.src = asset;
+  } else {
+    elements.zodiacMascot.removeAttribute("src");
+  }
+}
+
+function zodiacForYear(year) {
+  const index = ((year - 2020) % zodiacCycle.length + zodiacCycle.length) % zodiacCycle.length;
+  return zodiacCycle[index];
 }
 
 function renderEntries(month) {

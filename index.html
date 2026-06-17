@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DongDong Ledger Dashboard</title>
-    <link rel="stylesheet" href="./styles.css?v=20260618-horse-v2" />
+    <link rel="stylesheet" href="./styles.css?v=20260618-zodiac-v3" />
   </head>
   <body>
     <main class="app-shell">
@@ -12,33 +12,8 @@
         <div class="title-group">
           <p class="eyebrow">DongDong Ledger</p>
           <h1>消費儀錶板</h1>
-          <div class="seasonal-horse-stage" aria-hidden="true">
-            <img class="scene-horse scene-run scene-horse-art" src="./assets/horse-run-v2.png" alt="" />
-            <svg class="scene-horse scene-jump" viewBox="0 0 160 100">
-              <ellipse class="scene-shadow" cx="86" cy="89" rx="42" ry="6" />
-              <path class="scene-tail" d="M121 39c24-13 34-3 24 10-5-7-13-7-25-2Z" />
-              <ellipse class="scene-body" cx="87" cy="43" rx="39" ry="24" transform="rotate(8 87 43)" />
-              <circle class="scene-head" cx="50" cy="29" r="23" />
-              <path class="scene-mane" d="M44 8c-16 7-21 24-9 39 4-10 11-15 18-22 6-7 1-14-9-17Z" />
-              <path class="scene-ear" d="m37 12-6-11c-2-3-7-1-7 3l3 15Zm24 0 7-10c3-3 7 0 6 4l-4 14Z" />
-              <path class="scene-leg" d="M70 59 54 74l19 6M87 63l-5 18 17-6M105 57l19 15 13-7M116 51l23 5" />
-              <circle class="scene-eye" cx="44" cy="29" r="3" />
-              <path class="scene-smile" d="M39 39c5 4 10 4 15 0" />
-              <path class="scene-scarf" d="M58 40c15 9 28 10 43 7" />
-            </svg>
-            <img class="scene-horse scene-wrap scene-horse-art" src="./assets/horse-wrap-v2.png" alt="" />
-            <svg class="scene-horse scene-eat" viewBox="0 0 160 100">
-              <ellipse class="scene-shadow" cx="83" cy="91" rx="48" ry="6" />
-              <ellipse class="scene-body" cx="87" cy="65" rx="36" ry="25" />
-              <circle class="scene-head" cx="58" cy="38" r="27" />
-              <path class="scene-mane" d="M51 13c-18 8-23 29-8 44 4-12 11-17 19-25 6-8 1-15-11-19Z" />
-              <path class="scene-ear" d="m44 19-7-16c-2-4-8-2-7 3l3 21Zm26-1 7-14c2-4 8-1 7 3l-4 19Z" />
-              <path class="scene-arm" d="M76 65c9 3 15 5 22 11" />
-              <path class="zongzi-leaf" d="m101 55 17 28H86Z" />
-              <path class="zongzi-string" d="M91 72h22m-12-14v24" />
-              <circle class="scene-eye" cx="51" cy="37" r="3" />
-              <path class="scene-smile" d="M50 49c5 2 10 1 13-3" />
-            </svg>
+          <div id="zodiacMascotStage" class="zodiac-mascot-stage" aria-hidden="true">
+            <img id="zodiacMascot" class="zodiac-mascot-art" alt="" />
           </div>
         </div>
         <div class="month-controls" aria-label="月份切換">
@@ -75,23 +50,6 @@
             <span class="calendar-ribbon ribbon-two"></span>
             <span class="calendar-deco deco-one"></span>
             <span class="calendar-deco deco-two"></span>
-            <svg class="horse-mascot" viewBox="0 0 180 150" role="img" aria-label="">
-              <path class="horse-shadow" d="M36 126c16 10 83 12 108 0 6-3 6-10 0-13-23-11-94-10-109 1-5 4-4 9 1 12Z" />
-              <path class="horse-tail" d="M123 76c22-10 38-8 44 2 5 8-2 20-16 21 3-8-3-13-13-13-7 0-12 2-17 5Z" />
-              <path class="horse-body" d="M48 78c6-25 26-42 55-38 24 3 41 20 41 45 0 26-18 43-47 43-30 0-55-18-49-50Z" />
-              <path class="horse-face" d="M47 39c-7 10-10 25-7 39 5 22 22 34 45 32 25-2 42-22 41-47-1-23-16-39-39-43-18-3-31 4-40 19Z" />
-              <path class="horse-mane" d="M79 17c-16 8-25 25-22 44 2 17 13 28 30 32-5-12-2-22 5-32 6-9 4-22-2-32-3-5-7-9-11-12Z" />
-              <path class="horse-ear" d="M63 27 48 5c-3-4-9-2-9 4l3 28Zm40 1 8-24c2-5 9-5 11 1l4 29Z" />
-              <path class="horse-muzzle" d="M82 72c18 0 32 8 32 21 0 12-12 22-31 22-18 0-33-9-33-22 0-12 13-21 32-21Z" />
-              <path class="horse-blaze" d="M76 32c10 8 15 20 13 36-2 12-10 19-17 22 7-20 5-38 4-58Z" />
-              <circle class="horse-eye" cx="66" cy="61" r="5" />
-              <circle class="horse-eye" cx="101" cy="61" r="5" />
-              <circle class="horse-cheek" cx="57" cy="77" r="7" />
-              <circle class="horse-cheek" cx="111" cy="77" r="7" />
-              <path class="horse-nose" d="M75 93c2 3 12 3 15 0" />
-              <path class="horse-leg" d="M65 116c-5 12-4 18 3 20 8 2 13-3 15-15Zm45-1c4 13 10 19 17 15 7-3 6-11-2-21Z" />
-              <path class="horse-sash" d="M50 88c19 13 49 18 85 9" />
-            </svg>
           </div>
           <div class="calendar-head">
             <strong id="calendarTitle"></strong>
@@ -185,6 +143,6 @@
         <span id="generatedAt"></span>
       </footer>
     </main>
-    <script src="./app.js?v=20260618-horse-v2" type="module"></script>
+    <script src="./app.js?v=20260618-zodiac-v3" type="module"></script>
   </body>
 </html>
