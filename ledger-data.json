@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T00:51:50.147Z",
+  "generatedAt": "2026-06-17T02:46:35.882Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,26 +43,26 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 16779,
+      "totalExpense": 17015,
       "totalIncome": 0,
-      "net": -16779,
+      "net": -17015,
       "categories": [
         {
           "category": "餐飲",
           "amount": 1426,
-          "ratio": 0.08498718636390727,
+          "ratio": 0.08380840434910374,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 1200,
-          "ratio": 0.07151796888968354,
+          "ratio": 0.07052600646488393,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.5661839203766613,
+          "ratio": 0.5583308845136644,
           "color": "#FFD93D"
         },
         {
@@ -74,13 +74,13 @@
         {
           "category": "醫療",
           "amount": 1800,
-          "ratio": 0.1072769533345253,
+          "ratio": 0.1057890096973259,
           "color": "#6BCB77"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.01698551761129984,
+          "ratio": 0.016749926535409933,
           "color": "#F06595"
         },
         {
@@ -91,14 +91,14 @@
         },
         {
           "category": "旅遊",
-          "amount": 0,
-          "ratio": 0,
+          "amount": 236,
+          "ratio": 0.013870114604760505,
           "color": "#00C2A8"
         },
         {
           "category": "其他",
           "amount": 2568,
-          "ratio": 0.15304845342392276,
+          "ratio": 0.1509256538348516,
           "color": "#ADB5BD"
         }
       ],
@@ -113,7 +113,7 @@
         "2026-06-13": 265,
         "2026-06-15": 74,
         "2026-06-16": 170,
-        "2026-06-17": 2218
+        "2026-06-17": 2454
       },
       "entries": [
         {
@@ -365,6 +365,18 @@
           "category": "其他",
           "item": "行動電源",
           "amount": 2218,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 23,
+          "month": "2026-06",
+          "timestamp": "2026-06-17T02:46:28.916Z",
+          "date": "2026-06-17",
+          "type": "expense",
+          "category": "旅遊",
+          "item": "國外旅遊網路",
+          "amount": 236,
           "currency": "TWD",
           "splitParticipants": ""
         }
