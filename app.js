@@ -40,18 +40,18 @@ const numberFormatter = new Intl.NumberFormat("zh-TW", {
 });
 
 const calendarThemes = [
-  { className: "theme-new-year", label: "春節小馬" },
-  { className: "theme-plum", label: "梅見小馬" },
-  { className: "theme-spring", label: "春日小馬" },
-  { className: "theme-sakura", label: "櫻花小馬" },
-  { className: "theme-fresh-green", label: "新綠小馬" },
-  { className: "theme-dragon-boat", label: "端午小馬" },
-  { className: "theme-summer-race", label: "夏日賽馬" },
-  { className: "theme-seaside", label: "海風小馬" },
-  { className: "theme-moon", label: "中秋小馬" },
-  { className: "theme-autumn", label: "秋收小馬" },
-  { className: "theme-maple", label: "楓葉小馬" },
-  { className: "theme-christmas", label: "聖誕小馬" }
+  { className: "theme-new-year", label: "春節躍馬", scene: "jump" },
+  { className: "theme-plum", label: "梅下小憩", scene: "eat" },
+  { className: "theme-spring", label: "春日奔跑", scene: "run" },
+  { className: "theme-sakura", label: "櫻花跳跳", scene: "jump" },
+  { className: "theme-fresh-green", label: "新綠野餐", scene: "eat" },
+  { className: "theme-dragon-boat", label: "端午包粽", scene: "wrap" },
+  { className: "theme-summer-race", label: "夏日賽馬", scene: "run" },
+  { className: "theme-seaside", label: "海風跳躍", scene: "jump" },
+  { className: "theme-moon", label: "月下品味", scene: "eat" },
+  { className: "theme-autumn", label: "秋收手作", scene: "wrap" },
+  { className: "theme-maple", label: "楓間奔跑", scene: "run" },
+  { className: "theme-christmas", label: "聖誕點心", scene: "eat" }
 ];
 
 init();
@@ -218,6 +218,9 @@ function renderCalendar(month) {
 function applyCalendarTheme(monthNumber) {
   const theme = calendarThemes[monthNumber - 1] ?? calendarThemes[0];
   elements.calendarPanel.className = `panel calendar-panel ${theme.className}`;
+  document.body.classList.remove(...calendarThemes.map((item) => item.className));
+  document.body.classList.add(theme.className);
+  document.body.dataset.horseScene = theme.scene;
 }
 
 function renderEntries(month) {

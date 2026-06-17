@@ -4,14 +4,64 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DongDong Ledger Dashboard</title>
-    <link rel="stylesheet" href="./styles.css?v=20260617-wealth-banner" />
+    <link rel="stylesheet" href="./styles.css?v=20260618-calendar-book" />
   </head>
   <body>
     <main class="app-shell">
       <header class="topbar">
-        <div>
+        <div class="title-group">
           <p class="eyebrow">DongDong Ledger</p>
           <h1>消費儀錶板</h1>
+          <div class="seasonal-horse-stage" aria-hidden="true">
+            <svg class="scene-horse scene-run" viewBox="0 0 160 100">
+              <ellipse class="scene-shadow" cx="82" cy="87" rx="53" ry="7" />
+              <path class="scene-tail" d="M119 46c22-17 35-10 29 5-5-7-13-6-25 2Z" />
+              <ellipse class="scene-body" cx="84" cy="52" rx="42" ry="25" transform="rotate(-7 84 52)" />
+              <circle class="scene-head" cx="48" cy="35" r="24" />
+              <path class="scene-mane" d="M43 13c-17 8-22 27-8 42 3-12 11-17 18-25 6-7 1-14-10-17Z" />
+              <path class="scene-ear" d="m34 17-7-15c-2-4-7-2-7 2l2 20Zm25-1 6-13c2-4 7-2 7 2l-2 19Z" />
+              <path class="scene-leg" d="M68 68 42 91M82 70l-5 24M101 66l25 19M111 61l35 7" />
+              <circle class="scene-eye" cx="42" cy="34" r="3" />
+              <path class="scene-smile" d="M37 45c5 4 10 4 15 0" />
+              <path class="scene-scarf" d="M56 46c14 9 29 12 45 9" />
+            </svg>
+            <svg class="scene-horse scene-jump" viewBox="0 0 160 100">
+              <ellipse class="scene-shadow" cx="86" cy="89" rx="42" ry="6" />
+              <path class="scene-tail" d="M121 39c24-13 34-3 24 10-5-7-13-7-25-2Z" />
+              <ellipse class="scene-body" cx="87" cy="43" rx="39" ry="24" transform="rotate(8 87 43)" />
+              <circle class="scene-head" cx="50" cy="29" r="23" />
+              <path class="scene-mane" d="M44 8c-16 7-21 24-9 39 4-10 11-15 18-22 6-7 1-14-9-17Z" />
+              <path class="scene-ear" d="m37 12-6-11c-2-3-7-1-7 3l3 15Zm24 0 7-10c3-3 7 0 6 4l-4 14Z" />
+              <path class="scene-leg" d="M70 59 54 74l19 6M87 63l-5 18 17-6M105 57l19 15 13-7M116 51l23 5" />
+              <circle class="scene-eye" cx="44" cy="29" r="3" />
+              <path class="scene-smile" d="M39 39c5 4 10 4 15 0" />
+              <path class="scene-scarf" d="M58 40c15 9 28 10 43 7" />
+            </svg>
+            <svg class="scene-horse scene-wrap" viewBox="0 0 160 100">
+              <ellipse class="scene-shadow" cx="83" cy="91" rx="50" ry="6" />
+              <ellipse class="scene-body" cx="85" cy="62" rx="36" ry="27" />
+              <circle class="scene-head" cx="55" cy="36" r="25" />
+              <path class="scene-mane" d="M49 13c-17 8-21 27-8 41 4-11 11-16 18-24 6-7 1-14-10-17Z" />
+              <path class="scene-ear" d="m42 18-7-15c-2-4-7-2-7 2l3 20Zm24-1 7-13c2-4 7-1 6 3l-4 18Z" />
+              <path class="scene-arm" d="M66 60c8 7 13 11 18 15m20-14c-7 6-12 10-18 14" />
+              <path class="zongzi-leaf" d="m87 56 21 34H67Z" />
+              <path class="zongzi-string" d="M72 76h30M87 60v29" />
+              <circle class="scene-eye" cx="49" cy="36" r="3" />
+              <path class="scene-smile" d="M44 47c5 4 10 4 15 0" />
+            </svg>
+            <svg class="scene-horse scene-eat" viewBox="0 0 160 100">
+              <ellipse class="scene-shadow" cx="83" cy="91" rx="48" ry="6" />
+              <ellipse class="scene-body" cx="87" cy="65" rx="36" ry="25" />
+              <circle class="scene-head" cx="58" cy="38" r="27" />
+              <path class="scene-mane" d="M51 13c-18 8-23 29-8 44 4-12 11-17 19-25 6-8 1-15-11-19Z" />
+              <path class="scene-ear" d="m44 19-7-16c-2-4-8-2-7 3l3 21Zm26-1 7-14c2-4 8-1 7 3l-4 19Z" />
+              <path class="scene-arm" d="M76 65c9 3 15 5 22 11" />
+              <path class="zongzi-leaf" d="m101 55 17 28H86Z" />
+              <path class="zongzi-string" d="M91 72h22m-12-14v24" />
+              <circle class="scene-eye" cx="51" cy="37" r="3" />
+              <path class="scene-smile" d="M50 49c5 2 10 1 13-3" />
+            </svg>
+          </div>
         </div>
         <div class="month-controls" aria-label="月份切換">
           <button id="prevMonth" class="icon-button" type="button" aria-label="上一個月">‹</button>
@@ -19,22 +69,6 @@
           <button id="nextMonth" class="icon-button" type="button" aria-label="下一個月">›</button>
         </div>
       </header>
-
-      <section class="wealth-banner" aria-label="財富管理橫幅">
-        <div class="wealth-banner-copy">
-          <span>Wealth Ledger</span>
-          <strong>把每一筆日常，整理成更從容的選擇。</strong>
-          <p>以溫柔的月度視角，看見現金流、分類占比與生活節奏。</p>
-        </div>
-        <div class="wealth-banner-art" aria-hidden="true">
-          <span class="ledger-line line-one"></span>
-          <span class="ledger-line line-two"></span>
-          <span class="coin coin-one"></span>
-          <span class="coin coin-two"></span>
-          <span class="leaf leaf-one"></span>
-          <span class="leaf leaf-two"></span>
-        </div>
-      </section>
 
       <section class="summary-strip" aria-label="月份摘要">
         <div>
@@ -173,6 +207,6 @@
         <span id="generatedAt"></span>
       </footer>
     </main>
-    <script src="./app.js?v=20260617-wealth-banner" type="module"></script>
+    <script src="./app.js?v=20260618-calendar-book" type="module"></script>
   </body>
 </html>

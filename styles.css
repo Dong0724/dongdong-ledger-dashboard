@@ -9,6 +9,12 @@
   --accent: #2f5d62;
   --gold: #d6a83d;
   --sage: #6f8f72;
+  --cal-edge-a: rgba(255, 171, 145, 0.28);
+  --cal-edge-b: rgba(126, 203, 168, 0.22);
+  --cal-edge-c: rgba(255, 225, 135, 0.2);
+  --cal-ink: #8b5a3c;
+  --cal-mane: #4f3227;
+  --cal-sash: #e8585f;
   --font-literary: "Noto Serif TC", "Source Han Serif TC", "Songti TC", "PMingLiU", "Microsoft JhengHei", serif;
   --font-ui: "Noto Serif TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
   --shadow: 0 18px 44px rgba(66, 52, 32, 0.12);
@@ -22,8 +28,11 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    linear-gradient(180deg, rgba(255, 253, 248, 0.86), rgba(247, 244, 238, 0.92)),
-    radial-gradient(circle at top left, rgba(47, 93, 98, 0.12), transparent 34%),
+    radial-gradient(ellipse at 0% 0%, var(--cal-edge-a), transparent 34%),
+    radial-gradient(ellipse at 100% 6%, var(--cal-edge-b), transparent 32%),
+    radial-gradient(ellipse at 100% 100%, var(--cal-edge-c), transparent 36%),
+    repeating-linear-gradient(0deg, rgba(121, 104, 76, 0.035) 0 1px, transparent 1px 32px),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.94), rgba(247, 244, 238, 0.96)),
     var(--bg);
   color: var(--ink);
   font-family: var(--font-ui);
@@ -36,17 +45,48 @@ select {
 }
 
 .app-shell {
+  position: relative;
   width: min(1180px, calc(100vw - 32px));
   margin: 0 auto;
   padding: 28px 0 36px;
 }
 
 .topbar {
+  position: relative;
+  overflow: hidden;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   gap: 18px;
-  padding: 14px 0 20px;
+  min-height: 154px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(199, 184, 157, 0.9);
+  border-top: 12px solid color-mix(in srgb, var(--cal-ink), white 34%);
+  border-radius: 8px;
+  padding: 24px 24px 20px;
+  background:
+    radial-gradient(ellipse at 8% 8%, var(--cal-edge-a), transparent 42%),
+    radial-gradient(ellipse at 96% 100%, var(--cal-edge-b), transparent 44%),
+    linear-gradient(180deg, rgba(255, 254, 250, 0.98), rgba(255, 251, 241, 0.94));
+  box-shadow: var(--shadow);
+}
+
+.topbar::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 22px;
+  right: 22px;
+  height: 24px;
+  background: repeating-linear-gradient(90deg, transparent 0 30px, #6f6558 30px 37px, transparent 37px 56px);
+  opacity: 0.78;
+}
+
+.title-group {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  padding-right: 176px;
 }
 
 .eyebrow {
@@ -103,150 +143,86 @@ select {
   padding: 0 12px;
 }
 
-.wealth-banner {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.42fr);
-  min-height: 148px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(226, 198, 125, 0.72);
-  border-radius: 8px;
-  background:
-    linear-gradient(105deg, rgba(255, 250, 222, 0.98), rgba(255, 243, 195, 0.94) 48%, rgba(250, 232, 174, 0.88)),
-    linear-gradient(180deg, #fff9df, #f8e8ae);
-  box-shadow: 0 18px 44px rgba(122, 92, 33, 0.13);
-}
-
-.wealth-banner::before {
-  content: "";
+.seasonal-horse-stage {
   position: absolute;
-  inset: 12px;
-  z-index: 0;
-  border: 1px solid rgba(169, 129, 44, 0.18);
-  border-radius: 8px;
-  background:
-    linear-gradient(90deg, rgba(166, 126, 39, 0.08) 1px, transparent 1px) 0 0 / 36px 36px,
-    linear-gradient(180deg, rgba(166, 126, 39, 0.06) 1px, transparent 1px) 0 0 / 36px 36px;
+  top: -24px;
+  right: 0;
+  width: 168px;
+  height: 110px;
   pointer-events: none;
 }
 
-.wealth-banner-copy {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  align-content: center;
-  gap: 8px;
-  padding: 26px clamp(20px, 4vw, 42px);
+.scene-horse {
+  display: none;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 8px 8px rgba(72, 51, 33, 0.12));
 }
 
-.wealth-banner-copy span {
-  color: #8b6a26;
-  font-size: 0.76rem;
-  font-weight: 800;
-  text-transform: uppercase;
+body[data-horse-scene="run"] .scene-run,
+body[data-horse-scene="jump"] .scene-jump,
+body[data-horse-scene="wrap"] .scene-wrap,
+body[data-horse-scene="eat"] .scene-eat {
+  display: block;
 }
 
-.wealth-banner-copy strong {
-  max-width: 700px;
-  font-family: var(--font-literary);
-  font-size: clamp(1.45rem, 3vw, 2.35rem);
-  font-weight: 800;
-  line-height: 1.18;
+.scene-shadow {
+  fill: rgba(86, 63, 31, 0.16);
 }
 
-.wealth-banner-copy p {
-  max-width: 620px;
-  margin: 0;
-  color: #75633d;
-  font-size: clamp(0.92rem, 1.4vw, 1.05rem);
-  line-height: 1.7;
+.scene-body,
+.scene-head {
+  fill: var(--cal-ink);
 }
 
-.wealth-banner-art {
-  position: relative;
-  z-index: 1;
-  min-height: 148px;
+.scene-tail,
+.scene-mane {
+  fill: var(--cal-mane);
 }
 
-.ledger-line {
-  position: absolute;
-  right: 24px;
-  width: min(240px, 42vw);
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(132, 101, 35, 0.34));
+.scene-ear {
+  fill: color-mix(in srgb, var(--cal-ink), white 9%);
 }
 
-.line-one {
-  top: 46px;
+.scene-eye {
+  fill: #2d241d;
 }
 
-.line-two {
-  top: 92px;
+.scene-smile,
+.scene-leg,
+.scene-arm,
+.scene-scarf,
+.zongzi-string {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.coin {
-  position: absolute;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 35% 28%, rgba(255, 255, 255, 0.76), transparent 26%),
-    linear-gradient(145deg, #f9d96b, #c89324);
-  box-shadow: inset 0 0 0 1px rgba(126, 90, 20, 0.22), 0 10px 20px rgba(126, 90, 20, 0.16);
+.scene-smile {
+  stroke: #5d3d2b;
+  stroke-width: 3;
 }
 
-.coin::after {
-  content: "";
-  position: absolute;
-  inset: 24%;
-  border: 1px solid rgba(112, 79, 17, 0.34);
-  border-radius: 50%;
+.scene-leg,
+.scene-arm {
+  stroke: var(--cal-ink);
+  stroke-width: 10;
 }
 
-.coin-one {
-  right: 72px;
-  top: 30px;
-  width: 46px;
-  height: 46px;
+.scene-scarf {
+  stroke: var(--cal-sash);
+  stroke-width: 7;
 }
 
-.coin-two {
-  right: 122px;
-  bottom: 28px;
-  width: 34px;
-  height: 34px;
+.zongzi-leaf {
+  fill: #66a35d;
+  stroke: #477b47;
+  stroke-width: 2;
 }
 
-.leaf {
-  position: absolute;
-  border-radius: 70% 0 70% 0;
-  background: linear-gradient(135deg, #97aa6c, #57785e);
-  opacity: 0.86;
-  transform: rotate(-28deg);
-}
-
-.leaf::after {
-  content: "";
-  position: absolute;
-  inset: 47% 10% auto 10%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.52);
-  transform: rotate(26deg);
-}
-
-.leaf-one {
-  right: 36px;
-  bottom: 30px;
-  width: 46px;
-  height: 24px;
-}
-
-.leaf-two {
-  right: 170px;
-  top: 34px;
-  width: 32px;
-  height: 18px;
-  transform: rotate(20deg);
+.zongzi-string {
+  stroke: #fff1b9;
+  stroke-width: 2;
 }
 
 .summary-strip {
@@ -258,15 +234,31 @@ select {
 
 .summary-strip > div,
 .panel {
-  border: 1px solid rgba(222, 214, 201, 0.92);
-  background: rgba(255, 253, 248, 0.9);
+  border: 1px solid rgba(209, 198, 179, 0.94);
+  background:
+    linear-gradient(90deg, transparent 31px, rgba(217, 110, 100, 0.12) 31px 32px, transparent 32px),
+    repeating-linear-gradient(0deg, transparent 0 31px, rgba(110, 137, 151, 0.08) 31px 32px),
+    rgba(255, 253, 248, 0.94);
   box-shadow: var(--shadow);
 }
 
 .summary-strip > div {
+  position: relative;
   min-height: 96px;
-  padding: 18px 20px;
+  padding: 18px 20px 18px 42px;
   border-radius: 8px;
+}
+
+.summary-strip > div::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid color-mix(in srgb, var(--cal-ink), white 28%);
+  border-radius: 50%;
+  background: #fffdf8;
 }
 
 .summary-strip span,
@@ -304,9 +296,23 @@ select {
 }
 
 .panel {
+  position: relative;
   border-radius: 8px;
   padding: 18px;
   min-width: 0;
+}
+
+.panel::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 22px;
+  height: 6px;
+  border-top: 2px solid color-mix(in srgb, var(--cal-ink), white 34%);
+  border-bottom: 2px solid color-mix(in srgb, var(--cal-ink), white 34%);
+  opacity: 0.28;
+  pointer-events: none;
 }
 
 .chart-panel {
@@ -884,15 +890,9 @@ td {
     flex-direction: column;
   }
 
-  .wealth-banner {
-    grid-template-columns: 1fr;
-  }
-
-  .wealth-banner-art {
-    position: absolute;
-    inset: 0;
-    min-height: auto;
-    opacity: 0.42;
+  .title-group {
+    min-height: 100px;
+    padding-right: 154px;
   }
 
   .summary-strip,
@@ -917,16 +917,20 @@ td {
     gap: 8px;
   }
 
-  .wealth-banner {
-    min-height: 168px;
+  .topbar {
+    min-height: 208px;
+    padding: 22px 16px 16px;
   }
 
-  .wealth-banner-copy {
-    padding: 22px 18px;
+  .seasonal-horse-stage {
+    top: -20px;
+    right: -8px;
+    width: 150px;
+    height: 100px;
   }
 
-  .wealth-banner-copy p {
-    font-size: 0.9rem;
+  .deco-one {
+    display: none;
   }
 
   .summary-strip > div {
