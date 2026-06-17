@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-06-17T02:46:35.882Z",
+  "generatedAt": "2026-06-17T06:58:06.799Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
     {
       "name": "餐飲",
-      "color": "#FF6B6B"
+      "color": "#FF4D4D"
     },
     {
       "name": "交通",
-      "color": "#4D96FF"
+      "color": "#1E88E5"
     },
     {
       "name": "居家",
-      "color": "#FFD93D"
+      "color": "#FFD500"
     },
     {
       "name": "娛樂",
-      "color": "#C77DFF"
+      "color": "#9B5DE5"
     },
     {
       "name": "醫療",
-      "color": "#6BCB77"
+      "color": "#00C853"
     },
     {
       "name": "訂閱服務",
-      "color": "#F06595"
+      "color": "#F15BB5"
     },
     {
       "name": "學習",
-      "color": "#FFB703"
+      "color": "#FF9F1C"
     },
     {
       "name": "旅遊",
-      "color": "#00C2A8"
+      "color": "#00B4D8"
     },
     {
       "name": "其他",
-      "color": "#ADB5BD"
+      "color": "#8D99AE"
     }
   ],
   "months": [
@@ -51,55 +51,55 @@
           "category": "餐飲",
           "amount": 1426,
           "ratio": 0.08380840434910374,
-          "color": "#FF6B6B"
+          "color": "#FF4D4D"
         },
         {
           "category": "交通",
           "amount": 1200,
           "ratio": 0.07052600646488393,
-          "color": "#4D96FF"
+          "color": "#1E88E5"
         },
         {
           "category": "居家",
           "amount": 9500,
           "ratio": 0.5583308845136644,
-          "color": "#FFD93D"
+          "color": "#FFD500"
         },
         {
           "category": "娛樂",
           "amount": 0,
           "ratio": 0,
-          "color": "#C77DFF"
+          "color": "#9B5DE5"
         },
         {
           "category": "醫療",
           "amount": 1800,
           "ratio": 0.1057890096973259,
-          "color": "#6BCB77"
+          "color": "#00C853"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
           "ratio": 0.016749926535409933,
-          "color": "#F06595"
+          "color": "#F15BB5"
         },
         {
           "category": "學習",
           "amount": 0,
           "ratio": 0,
-          "color": "#FFB703"
+          "color": "#FF9F1C"
         },
         {
           "category": "旅遊",
           "amount": 236,
           "ratio": 0.013870114604760505,
-          "color": "#00C2A8"
+          "color": "#00B4D8"
         },
         {
           "category": "其他",
           "amount": 2568,
           "ratio": 0.1509256538348516,
-          "color": "#ADB5BD"
+          "color": "#8D99AE"
         }
       ],
       "dailyTotals": {
@@ -392,55 +392,55 @@
           "category": "餐飲",
           "amount": 110,
           "ratio": 1,
-          "color": "#FF6B6B"
+          "color": "#FF4D4D"
         },
         {
           "category": "交通",
           "amount": 0,
           "ratio": 0,
-          "color": "#4D96FF"
+          "color": "#1E88E5"
         },
         {
           "category": "居家",
           "amount": 0,
           "ratio": 0,
-          "color": "#FFD93D"
+          "color": "#FFD500"
         },
         {
           "category": "娛樂",
           "amount": 0,
           "ratio": 0,
-          "color": "#C77DFF"
+          "color": "#9B5DE5"
         },
         {
           "category": "醫療",
           "amount": 0,
           "ratio": 0,
-          "color": "#6BCB77"
+          "color": "#00C853"
         },
         {
           "category": "訂閱服務",
           "amount": 0,
           "ratio": 0,
-          "color": "#F06595"
+          "color": "#F15BB5"
         },
         {
           "category": "學習",
           "amount": 0,
           "ratio": 0,
-          "color": "#FFB703"
+          "color": "#FF9F1C"
         },
         {
           "category": "旅遊",
           "amount": 0,
           "ratio": 0,
-          "color": "#00C2A8"
+          "color": "#00B4D8"
         },
         {
           "category": "其他",
           "amount": 0,
           "ratio": 0,
-          "color": "#ADB5BD"
+          "color": "#8D99AE"
         }
       ],
       "dailyTotals": {
