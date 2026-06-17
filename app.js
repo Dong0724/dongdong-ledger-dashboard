@@ -124,7 +124,7 @@ function renderChart(month) {
       return `${category.color} ${start}% ${cursor}%`;
     });
 
-  elements.pieChart.style.background = segments.length ? `conic-gradient(${segments.join(", ")})` : "#f0ebe1";
+  elements.pieChart.style.setProperty("--pie-fill", segments.length ? `conic-gradient(${segments.join(", ")})` : "#f0ebe1");
 
   elements.categoryLegend.replaceChildren(
     ...month.categories.map((category) => {
