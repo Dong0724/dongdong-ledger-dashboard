@@ -732,17 +732,18 @@ body[data-mascot-scene="wrap"] .zodiac-mascot-stage {
 }
 
 .table-wrap {
-  overflow-x: auto;
+  width: 100%;
+  overflow-x: visible;
 }
 
 table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
-  min-width: 680px;
 }
 
 .compact-table {
-  min-width: 520px;
+  width: 100%;
 }
 
 th,
@@ -751,6 +752,8 @@ td {
   padding: 12px 8px;
   text-align: left;
   vertical-align: top;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 th {
@@ -765,7 +768,7 @@ td {
 
 .amount-cell {
   text-align: right;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .category-pill {
@@ -902,6 +905,11 @@ td {
 
   .panel {
     padding: 12px;
+  }
+
+  th,
+  td {
+    padding: 9px 4px;
   }
 
   .insight-panel {

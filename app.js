@@ -338,13 +338,12 @@ function renderSplitEntries(month) {
       .map((entry) => {
         const participants = splitParticipantList(entry.splitParticipants);
         const payers = participants.filter((name) => !isSelfParticipant(name));
-        const perPerson = participants.length > 0 ? Number(entry.amount || 0) / participants.length : 0;
         const row = document.createElement("tr");
         row.innerHTML = `
           <td>${escapeHtml(entry.date)}</td>
           <td>${escapeHtml(entry.item)}</td>
           <td>${escapeHtml(payers.length ? payers.join("、") : entry.splitParticipants)}</td>
-          <td class="amount-cell">${formatSplitAmount(perPerson, entry.currency)}</td>
+          <td class="amount-cell">${formatSplitAmount(entry.amount, entry.currency)}</td>
         `;
         return row;
       })
