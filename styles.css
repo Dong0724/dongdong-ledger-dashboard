@@ -229,6 +229,80 @@ body[data-mascot-scene="wrap"] .zodiac-mascot-stage {
   grid-column: 1 / -1;
 }
 
+.insight-panel {
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 260px;
+}
+
+.insight-content {
+  position: relative;
+  z-index: 2;
+  max-width: calc(100% - 170px);
+}
+
+.insight-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 22px;
+}
+
+.insight-row {
+  min-height: 82px;
+  border-bottom: 1px solid var(--line);
+  padding: 11px 0;
+}
+
+.insight-row span,
+.insight-row small {
+  display: block;
+  color: var(--muted);
+}
+
+.insight-row span {
+  font-size: 0.78rem;
+}
+
+.insight-row strong {
+  display: block;
+  margin: 5px 0 2px;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  line-height: 1.2;
+}
+
+.insight-row small {
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.insight-note {
+  margin: 14px 0 0;
+  border-left: 3px solid color-mix(in srgb, var(--cal-ink), white 28%);
+  padding: 6px 0 6px 11px;
+  color: #655d52;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.insight-mascot {
+  position: absolute;
+  right: -22px;
+  bottom: -12px;
+  z-index: 1;
+  width: 164px;
+  max-height: 152px;
+  object-fit: contain;
+  object-position: right bottom;
+  opacity: 0.42;
+  filter: saturate(0.82) drop-shadow(0 8px 12px rgba(72, 51, 33, 0.1));
+  pointer-events: none;
+}
+
+.insight-mascot[hidden] {
+  display: none;
+}
+
 .panel {
   position: relative;
   border-radius: 8px;
@@ -779,6 +853,14 @@ td {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+
+  .insight-content {
+    max-width: 100%;
+  }
+
+  .insight-note {
+    padding-right: 104px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -820,6 +902,31 @@ td {
 
   .panel {
     padding: 12px;
+  }
+
+  .insight-panel {
+    min-height: 310px;
+  }
+
+  .insight-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 14px;
+  }
+
+  .insight-row {
+    min-height: 82px;
+  }
+
+  .insight-note {
+    min-height: 76px;
+    padding-right: 96px;
+  }
+
+  .insight-mascot {
+    right: -26px;
+    width: 142px;
+    max-height: 130px;
+    opacity: 0.34;
   }
 
   .day-button {

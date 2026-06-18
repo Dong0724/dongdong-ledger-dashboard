@@ -28,6 +28,17 @@ const elements = {
   splitCount: document.querySelector("#splitCount"),
   foreignTable: document.querySelector("#foreignTable"),
   foreignCount: document.querySelector("#foreignCount"),
+  insightPeriod: document.querySelector("#insightPeriod"),
+  topCategory: document.querySelector("#topCategory"),
+  topCategoryDetail: document.querySelector("#topCategoryDetail"),
+  peakDay: document.querySelector("#peakDay"),
+  peakDayDetail: document.querySelector("#peakDayDetail"),
+  spendingDays: document.querySelector("#spendingDays"),
+  noSpendingDays: document.querySelector("#noSpendingDays"),
+  dailyAverage: document.querySelector("#dailyAverage"),
+  dailyAverageDetail: document.querySelector("#dailyAverageDetail"),
+  insightNote: document.querySelector("#insightNote"),
+  insightMascot: document.querySelector("#insightMascot"),
   generatedAt: document.querySelector("#generatedAt")
 };
 
@@ -146,6 +157,7 @@ function render() {
   renderDayEntries(month);
   renderSplitEntries(month);
   renderForeignEntries(month);
+  renderMonthlyInsight(month);
   renderEntries(month);
   renderFooter();
 }
@@ -363,6 +375,71 @@ function renderForeignEntries(month) {
         return row;
       })
   );
+}
+
+function renderMonthlyInsight(month) {
+  const [year, monthNumber] = month.month.split("-").map(Number);
+  const observedDays = observedDaysInMonth(year, monthNumber);
+  const spendingEntries = Object.entries(month.dailyTotals ?? {}).filter(([, amount]) => Number(amount) > 0);
+  const spendingDayCount = spendingEntries.length;
+  const noSpendingDayCount = Math.max(0, observedDays - spendingDayCount);
+  const topCategory = month.categories
+    .filter((category) => Number(category.amount) > 0)
+    .sort((a, b) => Number(b.amount) - Number(a.amount))[0];
+  const peakDay = spendingEntries.sort((a, b) => Number(b[1]) - Number(a[1]))[0];
+  const zodiac = zodiacForYear(year);
+  const theme = calendarThemes[monthNumber - 1] ?? calendarThemes[0];
+  const mascotAsset = zodiacAssetSets[zodiac.key]?.[theme.scene];
+
+  elements.insightPeriod.textContent = observedDays ? `統計至 ${month.month}-${String(observedDays).padStart(2, "0")}` : "尚未開始";
+  elements.topCategory.textContent = topCategory?.category ?? "尚無資料";
+  elements.topCategoryDetail.textContent = topCategory
+    ? `${money(topCategory.amount)}・${percent(topCategory.ratio)}`
+    : "本月尚無台幣支出";
+  elements.peakDay.textContent = peakDay ? shortDate(peakDay[0]) : "尚無資料";
+  elements.peakDayDetail.textContent = peakDay ? money(peakDay[1]) : "本月尚無消費日";
+  elements.spendingDays.textContent = `${spendingDayCount} 天`;
+  elements.noSpendingDays.textContent = observedDays ? `無消費 ${noSpendingDayCount} 天` : "月份尚未開始";
+  elements.dailyAverage.textContent = observedDays ? money(Number(month.totalExpense || 0) / observedDays) : "—";
+  elements.dailyAverageDetail.textContent = observedDays ? `依 ${observedDays} 天計算` : "尚無可計算天數";
+  elements.insightNote.textContent = buildInsightNote(topCategory, peakDay, spendingDayCount, observedDays);
+  elements.insightMascot.hidden = !mascotAsset;
+  if (mascotAsset) {
+    elements.insightMascot.src = mascotAsset;
+  } else {
+    elements.insightMascot.removeAttribute("src");
+  }
+}
+
+function observedDaysInMonth(year, monthNumber) {
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth() + 1;
+  if (year > currentYear || (year === currentYear && monthNumber > currentMonth)) {
+    return 0;
+  }
+  if (year === currentYear && monthNumber === currentMonth) {
+    return now.getDate();
+  }
+  return new Date(year, monthNumber, 0).getDate();
+}
+
+function buildInsightNote(topCategory, peakDay, spendingDayCount, observedDays) {
+  if (!topCategory || !peakDay) {
+    return "這個月份還沒有足夠資料，新增記帳後會自動整理消費輪廓。";
+  }
+  const rhythm =
+    observedDays > 0 && spendingDayCount / observedDays >= 0.7
+      ? "消費分布較頻繁"
+      : observedDays > 0 && spendingDayCount / observedDays <= 0.35
+        ? "消費集中在少數日期"
+        : "消費節奏相對平均";
+  return `本月支出以「${topCategory.category}」為主，最高峰落在 ${shortDate(peakDay[0])}；${rhythm}。`;
+}
+
+function shortDate(value) {
+  const match = String(value).match(/^\d{4}-(\d{2})-(\d{2})$/);
+  return match ? `${Number(match[1])}/${Number(match[2])}` : String(value);
 }
 
 function renderFooter() {
