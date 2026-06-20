@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:47:59.627Z",
+  "generatedAt": "2026-06-20T10:36:22.751Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,44 +43,44 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 27061,
+      "totalExpense": 28211,
       "totalIncome": 0,
-      "net": -27061,
+      "net": -28211,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 7613,
-          "ratio": 0.281327371494032,
+          "amount": 8763,
+          "ratio": 0.3106235156499238,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 2605,
-          "ratio": 0.09626399615683086,
+          "ratio": 0.09233986742759916,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.3510587191899782,
+          "ratio": 0.33674807699124454,
           "color": "#FFD166"
         },
         {
           "category": "娛樂",
           "amount": 1696,
-          "ratio": 0.0626732197627582,
+          "ratio": 0.060118393534436924,
           "color": "#B388FF"
         },
         {
           "category": "醫療",
           "amount": 1800,
-          "ratio": 0.06651638889915376,
+          "ratio": 0.06380489879834107,
           "color": "#63D471"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.010531761575699346,
+          "ratio": 0.010102442309737336,
           "color": "#F56AB6"
         },
         {
@@ -92,13 +92,13 @@
         {
           "category": "旅遊",
           "amount": 236,
-          "ratio": 0.008721037655666827,
+          "ratio": 0.008365531175782497,
           "color": "#36CFC9"
         },
         {
           "category": "其他",
           "amount": 3326,
-          "ratio": 0.12290750526588079,
+          "ratio": 0.11789727411293467,
           "color": "#9AA6B2"
         }
       ],
@@ -115,7 +115,8 @@
         "2026-06-16": 170,
         "2026-06-17": 3212,
         "2026-06-18": 8038,
-        "2026-06-19": 1250
+        "2026-06-19": 1250,
+        "2026-06-20": 1150
       },
       "entries": [
         {
@@ -451,6 +452,18 @@
           "category": "交通",
           "item": "搭高鐵",
           "amount": 1160,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 30,
+          "month": "2026-06",
+          "timestamp": "2026-06-20T10:36:17.087Z",
+          "date": "2026-06-20",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "晚餐",
+          "amount": 1150,
           "currency": "TWD",
           "splitParticipants": ""
         }
