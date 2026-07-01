@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T16:34:22.652Z",
+  "generatedAt": "2026-07-01T16:40:13.541Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -604,18 +604,6 @@
         {
           "rowNumber": 42,
           "month": "2026-06",
-          "timestamp": "2026-06-29T06:37:26.042Z",
-          "date": "2026-06-29",
-          "type": "expense",
-          "category": "餐飲",
-          "item": "咖啡",
-          "amount": 2350000,
-          "currency": "RP",
-          "splitParticipants": ""
-        },
-        {
-          "rowNumber": 43,
-          "month": "2026-06",
           "timestamp": "2026-06-29T11:44:56.267Z",
           "date": "2026-06-29",
           "type": "expense",
@@ -626,7 +614,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 44,
+          "rowNumber": 43,
           "month": "2026-06",
           "timestamp": "2026-06-29T11:45:38.883Z",
           "date": "2026-06-29",
@@ -638,7 +626,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 45,
+          "rowNumber": 44,
           "month": "2026-06",
           "timestamp": "2026-06-29T11:46:10.361Z",
           "date": "2026-06-29",
@@ -650,7 +638,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 46,
+          "rowNumber": 45,
           "month": "2026-06",
           "timestamp": "2026-06-29T12:02:20.466Z",
           "date": "2026-06-29",
