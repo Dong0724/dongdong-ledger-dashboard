@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T16:40:13.541Z",
+  "generatedAt": "2026-07-01T16:46:30.267Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,14 +653,14 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 160110,
+      "totalExpense": 160055,
       "totalIncome": 0,
-      "net": -160110,
+      "net": -160055,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 110,
-          "ratio": 0.0006870276684779214,
+          "amount": 55,
+          "ratio": 0.0003436318765424385,
           "color": "#FF6B6B"
         },
         {
@@ -708,13 +708,12 @@
         {
           "category": "其他",
           "amount": 160000,
-          "ratio": 0.999312972331522,
+          "ratio": 0.9996563681234576,
           "color": "#9AA6B2"
         }
       ],
       "dailyTotals": {
-        "2026-07-01": 160055,
-        "2026-07-02": 55
+        "2026-07-01": 160055
       },
       "entries": [
         {
@@ -730,7 +729,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 6,
+          "rowNumber": 5,
           "month": "2026-07",
           "timestamp": "2026-07-01T07:09:05.827Z",
           "date": "2026-07-01",
@@ -742,7 +741,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 7,
+          "rowNumber": 6,
           "month": "2026-07",
           "timestamp": "2026-07-01T07:09:28.979Z",
           "date": "2026-07-01",
@@ -754,7 +753,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 8,
+          "rowNumber": 7,
           "month": "2026-07",
           "timestamp": "2026-07-01T07:09:50.271Z",
           "date": "2026-07-01",
@@ -766,7 +765,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 9,
+          "rowNumber": 8,
           "month": "2026-07",
           "timestamp": "2026-07-01T07:10:06.055Z",
           "date": "2026-07-01",
@@ -774,18 +773,6 @@
           "category": "其他",
           "item": "導遊伴手禮",
           "amount": 160000,
-          "currency": "TWD",
-          "splitParticipants": ""
-        },
-        {
-          "rowNumber": 3,
-          "month": "2026-07",
-          "timestamp": "2026-06-16T03:04:43.340Z",
-          "date": "2026-07-02",
-          "type": "expense",
-          "category": "餐飲",
-          "item": "咖啡",
-          "amount": 55,
           "currency": "TWD",
           "splitParticipants": ""
         }
