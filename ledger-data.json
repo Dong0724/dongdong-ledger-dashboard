@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T08:09:46.956Z",
+  "generatedAt": "2026-07-01T16:18:08.369Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -43,44 +43,44 @@
   "months": [
     {
       "month": "2026-06",
-      "totalExpense": 29501,
+      "totalExpense": 30848,
       "totalIncome": 0,
-      "net": -29501,
+      "net": -30848,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 8763,
-          "ratio": 0.2970407782787024,
+          "amount": 10020,
+          "ratio": 0.32481846473029047,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
-          "amount": 3895,
-          "ratio": 0.13202942273143284,
+          "amount": 3985,
+          "ratio": 0.12918179460580914,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 9500,
-          "ratio": 0.3220229822717874,
+          "ratio": 0.3079616182572614,
           "color": "#FFD166"
         },
         {
           "category": "娛樂",
           "amount": 1696,
-          "ratio": 0.0574895766245212,
+          "ratio": 0.054979253112033194,
           "color": "#B388FF"
         },
         {
           "category": "醫療",
           "amount": 1800,
-          "ratio": 0.06101488085149656,
+          "ratio": 0.058350622406639005,
           "color": "#63D471"
         },
         {
           "category": "訂閱服務",
           "amount": 285,
-          "ratio": 0.009660689468153622,
+          "ratio": 0.009238848547717842,
           "color": "#F56AB6"
         },
         {
@@ -92,13 +92,13 @@
         {
           "category": "旅遊",
           "amount": 236,
-          "ratio": 0.00799972882275177,
+          "ratio": 0.007650414937759336,
           "color": "#36CFC9"
         },
         {
           "category": "其他",
           "amount": 3326,
-          "ratio": 0.1127419409511542,
+          "ratio": 0.10781898340248963,
           "color": "#9AA6B2"
         }
       ],
@@ -117,7 +117,8 @@
         "2026-06-18": 8038,
         "2026-06-19": 1250,
         "2026-06-20": 1150,
-        "2026-06-21": 1290
+        "2026-06-21": 1380,
+        "2026-06-24": 1257
       },
       "entries": [
         {
@@ -479,19 +480,199 @@
           "amount": 1290,
           "currency": "TWD",
           "splitParticipants": ""
+        },
+        {
+          "rowNumber": 32,
+          "month": "2026-06",
+          "timestamp": "2026-06-21T08:09:49.730Z",
+          "date": "2026-06-21",
+          "type": "expense",
+          "category": "交通",
+          "item": "搭捷運",
+          "amount": 90,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 33,
+          "month": "2026-06",
+          "timestamp": "2026-06-24T09:05:32.863Z",
+          "date": "2026-06-24",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "午餐",
+          "amount": 1257,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 34,
+          "month": "2026-06",
+          "timestamp": "2026-06-28T04:47:40.557Z",
+          "date": "2026-06-28",
+          "type": "expense",
+          "category": "其他",
+          "item": "泛舟照片",
+          "amount": 200000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 35,
+          "month": "2026-06",
+          "timestamp": "2026-06-28T04:48:02.588Z",
+          "date": "2026-06-28",
+          "type": "expense",
+          "category": "其他",
+          "item": "泛舟小費",
+          "amount": 100000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 36,
+          "month": "2026-06",
+          "timestamp": "2026-06-28T04:48:51.645Z",
+          "date": "2026-06-28",
+          "type": "expense",
+          "category": "其他",
+          "item": "麵包",
+          "amount": 37000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 37,
+          "month": "2026-06",
+          "timestamp": "2026-06-28T04:50:29.025Z",
+          "date": "2026-06-28",
+          "type": "expense",
+          "category": "旅遊",
+          "item": "飯店小費",
+          "amount": 20000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 38,
+          "month": "2026-06",
+          "timestamp": "2026-06-28T04:51:30.083Z",
+          "date": "2026-06-28",
+          "type": "expense",
+          "category": "其他",
+          "item": "吉普車",
+          "amount": 50000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 39,
+          "month": "2026-06",
+          "timestamp": "2026-06-28T08:26:54.252Z",
+          "date": "2026-06-28",
+          "type": "expense",
+          "category": "其他",
+          "item": "香皂",
+          "amount": 110000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 40,
+          "month": "2026-06",
+          "timestamp": "2026-06-28T08:27:23.012Z",
+          "date": "2026-06-28",
+          "type": "expense",
+          "category": "其他",
+          "item": "背包",
+          "amount": 120000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 41,
+          "month": "2026-06",
+          "timestamp": "2026-06-29T06:37:18.460Z",
+          "date": "2026-06-29",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "咖啡",
+          "amount": 2350000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 42,
+          "month": "2026-06",
+          "timestamp": "2026-06-29T06:37:26.042Z",
+          "date": "2026-06-29",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "咖啡",
+          "amount": 2350000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 43,
+          "month": "2026-06",
+          "timestamp": "2026-06-29T11:44:56.267Z",
+          "date": "2026-06-29",
+          "type": "expense",
+          "category": "其他",
+          "item": "第二天房間小費",
+          "amount": 20000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 44,
+          "month": "2026-06",
+          "timestamp": "2026-06-29T11:45:38.883Z",
+          "date": "2026-06-29",
+          "type": "expense",
+          "category": "其他",
+          "item": "行李小費",
+          "amount": 10000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 45,
+          "month": "2026-06",
+          "timestamp": "2026-06-29T11:46:10.361Z",
+          "date": "2026-06-29",
+          "type": "expense",
+          "category": "其他",
+          "item": "精油按摩小費",
+          "amount": 40000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 46,
+          "month": "2026-06",
+          "timestamp": "2026-06-29T12:02:20.466Z",
+          "date": "2026-06-29",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "咖啡",
+          "amount": 248000,
+          "currency": "RP",
+          "splitParticipants": ""
         }
       ]
     },
     {
       "month": "2026-07",
-      "totalExpense": 110,
+      "totalExpense": 160110,
       "totalIncome": 0,
-      "net": -110,
+      "net": -160110,
       "categories": [
         {
           "category": "餐飲",
           "amount": 110,
-          "ratio": 1,
+          "ratio": 0.0006870276684779214,
           "color": "#FF6B6B"
         },
         {
@@ -538,13 +719,13 @@
         },
         {
           "category": "其他",
-          "amount": 0,
-          "ratio": 0,
+          "amount": 160000,
+          "ratio": 0.999312972331522,
           "color": "#9AA6B2"
         }
       ],
       "dailyTotals": {
-        "2026-07-01": 55,
+        "2026-07-01": 160055,
         "2026-07-02": 55
       },
       "entries": [
@@ -557,6 +738,54 @@
           "category": "餐飲",
           "item": "咖啡",
           "amount": 55,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 6,
+          "month": "2026-07",
+          "timestamp": "2026-07-01T07:09:05.827Z",
+          "date": "2026-07-01",
+          "type": "expense",
+          "category": "其他",
+          "item": "冰淇淋",
+          "amount": 120000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 7,
+          "month": "2026-07",
+          "timestamp": "2026-07-01T07:09:28.979Z",
+          "date": "2026-07-01",
+          "type": "expense",
+          "category": "其他",
+          "item": "海灘小費",
+          "amount": 200000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 8,
+          "month": "2026-07",
+          "timestamp": "2026-07-01T07:09:50.271Z",
+          "date": "2026-07-01",
+          "type": "expense",
+          "category": "其他",
+          "item": "房間小費",
+          "amount": 40000,
+          "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 9,
+          "month": "2026-07",
+          "timestamp": "2026-07-01T07:10:06.055Z",
+          "date": "2026-07-01",
+          "type": "expense",
+          "category": "其他",
+          "item": "導遊伴手禮",
+          "amount": 160000,
           "currency": "TWD",
           "splitParticipants": ""
         },
