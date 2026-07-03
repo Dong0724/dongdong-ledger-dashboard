@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T15:10:28.775Z",
+  "generatedAt": "2026-07-03T15:15:48.185Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -820,7 +820,7 @@
           "date": "2026-07-04",
           "type": "expense",
           "category": "其他",
-          "item": "??",
+          "item": "早餐",
           "amount": 90,
           "currency": "TWD",
           "splitParticipants": ""
