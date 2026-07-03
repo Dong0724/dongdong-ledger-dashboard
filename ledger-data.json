@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T16:54:17.900Z",
+  "generatedAt": "2026-07-03T01:31:36.923Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,9 +653,9 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 0,
+      "totalExpense": 25,
       "totalIncome": 0,
-      "net": 0,
+      "net": -25,
       "categories": [
         {
           "category": "餐飲",
@@ -707,12 +707,14 @@
         },
         {
           "category": "其他",
-          "amount": 0,
-          "ratio": 0,
+          "amount": 25,
+          "ratio": 1,
           "color": "#9AA6B2"
         }
       ],
-      "dailyTotals": {},
+      "dailyTotals": {
+        "2026-07-03": 25
+      },
       "entries": [
         {
           "rowNumber": 4,
@@ -760,6 +762,18 @@
           "item": "導遊伴手禮",
           "amount": 160000,
           "currency": "RP",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 8,
+          "month": "2026-07",
+          "timestamp": "2026-07-03T01:31:32.019Z",
+          "date": "2026-07-03",
+          "type": "expense",
+          "category": "其他",
+          "item": "冰淇淋",
+          "amount": 25,
+          "currency": "TWD",
           "splitParticipants": ""
         }
       ]
