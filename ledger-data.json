@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T08:17:33.578Z",
+  "generatedAt": "2026-07-03T15:07:51.359Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,20 +653,20 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 1029,
+      "totalExpense": 1119,
       "totalIncome": 0,
-      "net": -1029,
+      "net": -1119,
       "categories": [
         {
           "category": "餐飲",
           "amount": 994,
-          "ratio": 0.9659863945578231,
+          "ratio": 0.8882931188561215,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 10,
-          "ratio": 0.009718172983479106,
+          "ratio": 0.008936550491510277,
           "color": "#4D96FF"
         },
         {
@@ -707,13 +707,13 @@
         },
         {
           "category": "其他",
-          "amount": 25,
-          "ratio": 0.024295432458697766,
+          "amount": 115,
+          "ratio": 0.10277033065236818,
           "color": "#9AA6B2"
         }
       ],
       "dailyTotals": {
-        "2026-07-03": 1029
+        "2026-07-03": 1119
       },
       "entries": [
         {
@@ -809,6 +809,18 @@
           "category": "餐飲",
           "item": "晚餐",
           "amount": 226,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 12,
+          "month": "2026-07",
+          "timestamp": "2026-07-03T15:07:45.537Z",
+          "date": "2026-07-03",
+          "type": "expense",
+          "category": "其他",
+          "item": "未命名項目",
+          "amount": 90,
           "currency": "TWD",
           "splitParticipants": ""
         }
