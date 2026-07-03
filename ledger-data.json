@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T15:07:51.359Z",
+  "generatedAt": "2026-07-03T15:10:28.775Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -713,7 +713,8 @@
         }
       ],
       "dailyTotals": {
-        "2026-07-03": 1119
+        "2026-07-03": 1029,
+        "2026-07-04": 90
       },
       "entries": [
         {
@@ -816,10 +817,10 @@
           "rowNumber": 12,
           "month": "2026-07",
           "timestamp": "2026-07-03T15:07:45.537Z",
-          "date": "2026-07-03",
+          "date": "2026-07-04",
           "type": "expense",
           "category": "其他",
-          "item": "未命名項目",
+          "item": "??",
           "amount": 90,
           "currency": "TWD",
           "splitParticipants": ""
