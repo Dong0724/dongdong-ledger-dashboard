@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T12:26:57.776Z",
+  "generatedAt": "2026-07-06T01:19:03.220Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,26 +653,26 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 3299,
+      "totalExpense": 3644,
       "totalIncome": 0,
-      "net": -3299,
+      "net": -3644,
       "categories": [
         {
           "category": "餐飲",
           "amount": 994,
-          "ratio": 0.301303425280388,
+          "ratio": 0.27277716794731066,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 2190,
-          "ratio": 0.6638375265231888,
+          "ratio": 0.6009879253567508,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
-          "amount": 0,
-          "ratio": 0,
+          "amount": 345,
+          "ratio": 0.0946761800219539,
           "color": "#FFD166"
         },
         {
@@ -708,14 +708,15 @@
         {
           "category": "其他",
           "amount": 115,
-          "ratio": 0.03485904819642316,
+          "ratio": 0.031558726673984634,
           "color": "#9AA6B2"
         }
       ],
       "dailyTotals": {
         "2026-07-03": 1029,
         "2026-07-04": 90,
-        "2026-07-05": 2180
+        "2026-07-05": 2180,
+        "2026-07-06": 345
       },
       "entries": [
         {
@@ -847,6 +848,18 @@
           "category": "交通",
           "item": "高鐵交通",
           "amount": 890,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 15,
+          "month": "2026-07",
+          "timestamp": "2026-07-06T01:18:56.184Z",
+          "date": "2026-07-06",
+          "type": "expense",
+          "category": "居家",
+          "item": "居家牙膏洗衣精",
+          "amount": 345,
           "currency": "TWD",
           "splitParticipants": ""
         }
