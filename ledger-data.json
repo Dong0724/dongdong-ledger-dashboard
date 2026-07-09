@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T12:26:05.337Z",
+  "generatedAt": "2026-07-09T13:36:09.417Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,26 +653,26 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 4294,
+      "totalExpense": 5780,
       "totalIncome": 0,
-      "net": -4294,
+      "net": -5780,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 1384,
-          "ratio": 0.3223102002794597,
+          "amount": 1670,
+          "ratio": 0.2889273356401384,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
-          "amount": 2190,
-          "ratio": 0.5100139729855613,
+          "amount": 3390,
+          "ratio": 0.5865051903114187,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 345,
-          "ratio": 0.08034466697717746,
+          "ratio": 0.05968858131487889,
           "color": "#FFD166"
         },
         {
@@ -708,7 +708,7 @@
         {
           "category": "其他",
           "amount": 375,
-          "ratio": 0.08733115975780158,
+          "ratio": 0.06487889273356401,
           "color": "#9AA6B2"
         }
       ],
@@ -718,7 +718,7 @@
         "2026-07-05": 2180,
         "2026-07-06": 930,
         "2026-07-07": 25,
-        "2026-07-09": 40
+        "2026-07-09": 1526
       },
       "entries": [
         {
@@ -922,6 +922,30 @@
           "category": "餐飲",
           "item": "午餐",
           "amount": 40,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 21,
+          "month": "2026-07",
+          "timestamp": "2026-07-09T12:26:23.532Z",
+          "date": "2026-07-09",
+          "type": "expense",
+          "category": "交通",
+          "item": "交通月票",
+          "amount": 1200,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 22,
+          "month": "2026-07",
+          "timestamp": "2026-07-09T13:36:04.005Z",
+          "date": "2026-07-09",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "餐飲蛋撻",
+          "amount": 286,
           "currency": "TWD",
           "splitParticipants": ""
         }
