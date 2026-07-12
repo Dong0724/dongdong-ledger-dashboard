@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T13:36:09.417Z",
+  "generatedAt": "2026-07-12T13:13:30.755Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,26 +653,26 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 5780,
+      "totalExpense": 6660,
       "totalIncome": 0,
-      "net": -5780,
+      "net": -6660,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 1670,
-          "ratio": 0.2889273356401384,
+          "amount": 2550,
+          "ratio": 0.38288288288288286,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 3390,
-          "ratio": 0.5865051903114187,
+          "ratio": 0.509009009009009,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 345,
-          "ratio": 0.05968858131487889,
+          "ratio": 0.0518018018018018,
           "color": "#FFD166"
         },
         {
@@ -708,7 +708,7 @@
         {
           "category": "其他",
           "amount": 375,
-          "ratio": 0.06487889273356401,
+          "ratio": 0.05630630630630631,
           "color": "#9AA6B2"
         }
       ],
@@ -718,11 +718,12 @@
         "2026-07-05": 2180,
         "2026-07-06": 930,
         "2026-07-07": 25,
-        "2026-07-09": 1526
+        "2026-07-09": 1676,
+        "2026-07-12": 730
       },
       "entries": [
         {
-          "rowNumber": 4,
+          "rowNumber": 2,
           "month": "2026-07",
           "timestamp": "2026-07-01T07:09:05.827Z",
           "date": "2026-07-01",
@@ -734,7 +735,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 5,
+          "rowNumber": 3,
           "month": "2026-07",
           "timestamp": "2026-07-01T07:09:28.979Z",
           "date": "2026-07-01",
@@ -746,7 +747,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 6,
+          "rowNumber": 4,
           "month": "2026-07",
           "timestamp": "2026-07-01T07:09:50.271Z",
           "date": "2026-07-01",
@@ -758,7 +759,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 7,
+          "rowNumber": 5,
           "month": "2026-07",
           "timestamp": "2026-07-01T07:10:06.055Z",
           "date": "2026-07-01",
@@ -770,7 +771,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 8,
+          "rowNumber": 6,
           "month": "2026-07",
           "timestamp": "2026-07-03T01:31:32.019Z",
           "date": "2026-07-03",
@@ -782,7 +783,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 9,
+          "rowNumber": 7,
           "month": "2026-07",
           "timestamp": "2026-07-03T05:49:18.673Z",
           "date": "2026-07-03",
@@ -794,7 +795,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 10,
+          "rowNumber": 8,
           "month": "2026-07",
           "timestamp": "2026-07-03T06:39:15.459Z",
           "date": "2026-07-03",
@@ -806,7 +807,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 11,
+          "rowNumber": 9,
           "month": "2026-07",
           "timestamp": "2026-07-03T08:17:28.601Z",
           "date": "2026-07-03",
@@ -818,7 +819,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 12,
+          "rowNumber": 10,
           "month": "2026-07",
           "timestamp": "2026-07-03T15:07:45.537Z",
           "date": "2026-07-04",
@@ -830,7 +831,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 13,
+          "rowNumber": 11,
           "month": "2026-07",
           "timestamp": "2026-07-05T12:25:28.774Z",
           "date": "2026-07-05",
@@ -842,7 +843,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 14,
+          "rowNumber": 12,
           "month": "2026-07",
           "timestamp": "2026-07-05T12:26:50.296Z",
           "date": "2026-07-05",
@@ -854,7 +855,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 15,
+          "rowNumber": 13,
           "month": "2026-07",
           "timestamp": "2026-07-06T01:18:56.184Z",
           "date": "2026-07-06",
@@ -866,7 +867,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 16,
+          "rowNumber": 14,
           "month": "2026-07",
           "timestamp": "2026-07-06T08:27:25.704Z",
           "date": "2026-07-06",
@@ -878,7 +879,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 17,
+          "rowNumber": 15,
           "month": "2026-07",
           "timestamp": "2026-07-06T11:05:39.125Z",
           "date": "2026-07-06",
@@ -890,7 +891,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 18,
+          "rowNumber": 16,
           "month": "2026-07",
           "timestamp": "2026-07-06T11:05:56.818Z",
           "date": "2026-07-06",
@@ -902,7 +903,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 19,
+          "rowNumber": 17,
           "month": "2026-07",
           "timestamp": "2026-07-07T01:26:53.125Z",
           "date": "2026-07-07",
@@ -914,7 +915,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 20,
+          "rowNumber": 18,
           "month": "2026-07",
           "timestamp": "2026-07-09T12:25:59.536Z",
           "date": "2026-07-09",
@@ -926,7 +927,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 21,
+          "rowNumber": 19,
           "month": "2026-07",
           "timestamp": "2026-07-09T12:26:23.532Z",
           "date": "2026-07-09",
@@ -938,7 +939,7 @@
           "splitParticipants": ""
         },
         {
-          "rowNumber": 22,
+          "rowNumber": 20,
           "month": "2026-07",
           "timestamp": "2026-07-09T13:36:04.005Z",
           "date": "2026-07-09",
@@ -946,6 +947,30 @@
           "category": "餐飲",
           "item": "餐飲蛋撻",
           "amount": 286,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 21,
+          "month": "2026-07",
+          "timestamp": "2026-07-09T13:36:09.888Z",
+          "date": "2026-07-09",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "餐飲",
+          "amount": 150,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 22,
+          "month": "2026-07",
+          "timestamp": "2026-07-12T13:13:23.417Z",
+          "date": "2026-07-12",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "餐飲",
+          "amount": 730,
           "currency": "TWD",
           "splitParticipants": ""
         }
