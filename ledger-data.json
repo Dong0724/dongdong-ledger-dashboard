@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T13:57:30.260Z",
+  "generatedAt": "2026-07-12T15:02:21.784Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,32 +653,32 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 7424,
+      "totalExpense": 7724,
       "totalIncome": 0,
-      "net": -7424,
+      "net": -7724,
       "categories": [
         {
           "category": "餐飲",
           "amount": 3314,
-          "ratio": 0.4463900862068966,
+          "ratio": 0.4290523045054376,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 3390,
-          "ratio": 0.4566271551724138,
+          "ratio": 0.4388917659243915,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 345,
-          "ratio": 0.04647090517241379,
+          "ratio": 0.044665976178146036,
           "color": "#FFD166"
         },
         {
           "category": "娛樂",
-          "amount": 0,
-          "ratio": 0,
+          "amount": 300,
+          "ratio": 0.038839979285344384,
           "color": "#B388FF"
         },
         {
@@ -708,7 +708,7 @@
         {
           "category": "其他",
           "amount": 375,
-          "ratio": 0.05051185344827586,
+          "ratio": 0.04854997410668048,
           "color": "#9AA6B2"
         }
       ],
@@ -719,7 +719,7 @@
         "2026-07-06": 930,
         "2026-07-07": 25,
         "2026-07-09": 1676,
-        "2026-07-12": 1494
+        "2026-07-12": 1794
       },
       "entries": [
         {
@@ -995,6 +995,18 @@
           "category": "餐飲",
           "item": "餐飲麥當勞",
           "amount": 221,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 25,
+          "month": "2026-07",
+          "timestamp": "2026-07-12T15:02:15.220Z",
+          "date": "2026-07-12",
+          "type": "expense",
+          "category": "娛樂",
+          "item": "娛樂雲端",
+          "amount": 300,
           "currency": "TWD",
           "splitParticipants": ""
         }
