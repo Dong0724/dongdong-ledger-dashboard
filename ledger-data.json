@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T15:02:21.784Z",
+  "generatedAt": "2026-07-13T08:44:33.541Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,32 +653,32 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 7724,
+      "totalExpense": 8887,
       "totalIncome": 0,
-      "net": -7724,
+      "net": -8887,
       "categories": [
         {
           "category": "餐飲",
           "amount": 3314,
-          "ratio": 0.4290523045054376,
+          "ratio": 0.3729042421514572,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 3390,
-          "ratio": 0.4388917659243915,
+          "ratio": 0.38145605941262517,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 345,
-          "ratio": 0.044665976178146036,
+          "ratio": 0.03882074940924946,
           "color": "#FFD166"
         },
         {
           "category": "娛樂",
-          "amount": 300,
-          "ratio": 0.038839979285344384,
+          "amount": 1463,
+          "ratio": 0.16462248227748397,
           "color": "#B388FF"
         },
         {
@@ -708,7 +708,7 @@
         {
           "category": "其他",
           "amount": 375,
-          "ratio": 0.04854997410668048,
+          "ratio": 0.0421964667491842,
           "color": "#9AA6B2"
         }
       ],
@@ -719,7 +719,8 @@
         "2026-07-06": 930,
         "2026-07-07": 25,
         "2026-07-09": 1676,
-        "2026-07-12": 1794
+        "2026-07-12": 1794,
+        "2026-07-13": 1163
       },
       "entries": [
         {
@@ -1007,6 +1008,18 @@
           "category": "娛樂",
           "item": "娛樂雲端",
           "amount": 300,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 26,
+          "month": "2026-07",
+          "timestamp": "2026-07-13T08:44:27.292Z",
+          "date": "2026-07-13",
+          "type": "expense",
+          "category": "娛樂",
+          "item": "娛樂行動電源",
+          "amount": 1163,
           "currency": "TWD",
           "splitParticipants": ""
         }
