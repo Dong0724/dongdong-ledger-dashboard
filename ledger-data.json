@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T04:19:52.431Z",
+  "generatedAt": "2026-07-14T11:31:50.184Z",
   "timezone": "Asia/Taipei",
   "publicUrl": "https://dongdong-ledger-dashboard.pages.dev/",
   "categories": [
@@ -653,32 +653,32 @@
     },
     {
       "month": "2026-07",
-      "totalExpense": 9141,
+      "totalExpense": 9151,
       "totalIncome": 0,
-      "net": -9141,
+      "net": -9151,
       "categories": [
         {
           "category": "餐飲",
-          "amount": 3568,
-          "ratio": 0.39032928563614483,
+          "amount": 3578,
+          "ratio": 0.39099551961534257,
           "color": "#FF6B6B"
         },
         {
           "category": "交通",
           "amount": 3390,
-          "ratio": 0.37085658024286183,
+          "ratio": 0.3704513167959786,
           "color": "#4D96FF"
         },
         {
           "category": "居家",
           "amount": 345,
-          "ratio": 0.037742041352149654,
+          "ratio": 0.037700797727024365,
           "color": "#FFD166"
         },
         {
           "category": "娛樂",
           "amount": 1463,
-          "ratio": 0.16004813477737664,
+          "ratio": 0.15987323789749755,
           "color": "#B388FF"
         },
         {
@@ -708,7 +708,7 @@
         {
           "category": "其他",
           "amount": 375,
-          "ratio": 0.04102395799146702,
+          "ratio": 0.040979127964156925,
           "color": "#9AA6B2"
         }
       ],
@@ -721,7 +721,7 @@
         "2026-07-09": 1676,
         "2026-07-12": 1794,
         "2026-07-13": 1288,
-        "2026-07-14": 129
+        "2026-07-14": 139
       },
       "entries": [
         {
@@ -1045,6 +1045,18 @@
           "category": "餐飲",
           "item": "午餐",
           "amount": 129,
+          "currency": "TWD",
+          "splitParticipants": ""
+        },
+        {
+          "rowNumber": 29,
+          "month": "2026-07",
+          "timestamp": "2026-07-14T11:31:43.816Z",
+          "date": "2026-07-14",
+          "type": "expense",
+          "category": "餐飲",
+          "item": "晚餐",
+          "amount": 10,
           "currency": "TWD",
           "splitParticipants": ""
         }
